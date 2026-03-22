@@ -4,6 +4,73 @@ document.addEventListener('DOMContentLoaded', function () {
   const detailTabGroups = document.querySelectorAll('[data-detail-tabs]');
   const breakpoint = 992;
 
+  function equalizeDetailTabHeights(group) {
+    if (window.innerWidth < breakpoint) return;
+
+    const outerDesktopPanel = group.closest('.surface-switcher__desktop-panel');
+    if (outerDesktopPanel && outerDesktopPanel.hidden) return;
+
+    const panelsWrap = group.querySelector('.surface-detail-tabs__panels');
+    const panels = Array.from(group.querySelectorAll('.surface-detail-tabs__panel'));
+
+    if (!panelsWrap || !panels.length) return;
+
+    panels.forEach((panel) => {
+      panel.style.minHeight = '';
+    });
+
+    const wrapWidth = panelsWrap.clientWidth;
+
+    const originalStates = panels.map((panel) => {
+      return {
+        panel: panel,
+        hidden: panel.hidden,
+        display: panel.style.display,
+        position: panel.style.position,
+        visibility: panel.style.visibility,
+        pointerEvents: panel.style.pointerEvents,
+        zIndex: panel.style.zIndex,
+        width: panel.style.width,
+        left: panel.style.left,
+        top: panel.style.top
+      };
+    });
+
+    panels.forEach((panel) => {
+      panel.hidden = false;
+      panel.style.display = 'block';
+      panel.style.position = 'absolute';
+      panel.style.visibility = 'hidden';
+      panel.style.pointerEvents = 'none';
+      panel.style.zIndex = '-1';
+      panel.style.width = wrapWidth + 'px';
+      panel.style.left = '0';
+      panel.style.top = '0';
+    });
+
+    let tallest = 0;
+
+    panels.forEach((panel) => {
+      tallest = Math.max(tallest, panel.scrollHeight);
+    });
+
+    originalStates.forEach((state) => {
+      state.panel.hidden = state.hidden;
+      state.panel.style.display = state.display;
+      state.panel.style.position = state.position;
+      state.panel.style.visibility = state.visibility;
+      state.panel.style.pointerEvents = state.pointerEvents;
+      state.panel.style.zIndex = state.zIndex;
+      state.panel.style.width = state.width;
+      state.panel.style.left = state.left;
+      state.panel.style.top = state.top;
+    });
+
+    panels.forEach((panel) => {
+      panel.style.minHeight = tallest + 'px';
+    });
+  }
+
   switchers.forEach((switcher) => {
     const items = switcher.querySelectorAll('.surface-switcher__item');
     const desktopPanels = switcher.querySelectorAll('.surface-switcher__desktop-panel');
@@ -32,6 +99,15 @@ document.addEventListener('DOMContentLoaded', function () {
         const isMatch = panel.getAttribute('data-desktop-panel') === targetTabId;
         panel.hidden = !isMatch;
       });
+
+      const activeDesktopPanel = switcher.querySelector('.surface-switcher__desktop-panel:not([hidden])');
+
+      if (activeDesktopPanel) {
+        const nestedGroups = activeDesktopPanel.querySelectorAll('[data-detail-tabs]');
+        nestedGroups.forEach((group) => {
+          equalizeDetailTabHeights(group);
+        });
+      }
     }
 
     function clearActive() {
@@ -195,6 +271,8 @@ document.addEventListener('DOMContentLoaded', function () {
         panel.classList.toggle('is-active', isActive);
         panel.hidden = !isActive;
       });
+
+      equalizeDetailTabHeights(group);
     }
 
     triggers.forEach(function (trigger, index) {
@@ -238,6 +316,16 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     syncDesktopState();
-    window.addEventListener('resize', syncDesktopState);
+
+    window.addEventListener('resize', function () {
+      syncDesktopState();
+      equalizeDetailTabHeights(group);
+    });
+  });
+
+  window.addEventListener('load', function () {
+    detailTabGroups.forEach(function (group) {
+      equalizeDetailTabHeights(group);
+    });
   });
 });
