@@ -1,0 +1,283 @@
+.mw-1100 {
+  max-width: 1100px;
+}
+
+main#primary-content {
+    background-color: #283A5A;
+    background-image: url("../img/landing-designdays/Chicago-Map.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    color: #000;
+    padding-bottom: 4rem;
+}
+
+.designdays-header {
+    padding-block: 6rem;
+}
+
+.designdays-logo {
+    display: block;
+    width: 80%;
+    margin-inline: auto;
+    max-width: 800px;
+}
+
+.section-title {
+    font-weight: 600;
+    line-height: 1;
+}
+
+.event-section-wrapper {
+    display: grid;
+    gap: 2rem;
+}
+
+.event-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.event-card-img {
+    display: block;
+    width: 100%;
+    max-width: 360px;
+}
+
+.event-card-title,
+.details-title {
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.event-card-date {
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.event-card-time {
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.event-card-desc,
+.details-desc {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+  text-wrap: pretty;
+}
+
+.event-card-cta {
+  font-size: 18px;
+  font-weight: 600;
+  font-style: italic;
+  color: #000;
+}
+
+a.event-card-cta {
+  text-decoration: underline;
+}
+
+.details-link {
+  color: #000;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  text-decoration: underline;
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.details-grid-wrapper {
+  background-color: #fff;
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.new-products-carousel-wrapper {
+    padding: 1rem;
+    background-color: #fff;
+}
+
+.peek-slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding: 0;
+  margin-top: 2rem;
+}
+
+.peek-slider .swiper {
+  width: 100%;
+  overflow: visible;
+}
+
+.peek-slider .swiper-wrapper {
+  align-items: center;
+}
+
+.peek-slider .swiper-slide {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.35s ease, opacity 0.35s ease;
+
+  /* Lock aspect ratio */
+  aspect-ratio: 684 / 500;
+}
+
+.peek-slider .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* Optional polish so side previews feel secondary */
+.peek-slider .swiper-slide:not(.swiper-slide-active) {
+  opacity: 0.9;
+}
+
+.peek-slider .swiper-slide-active {
+  opacity: 1;
+}
+
+/* Nav buttons */
+.peek-slider__nav {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 14%;
+  min-width: 70px;
+  z-index: 20;
+  border: 0;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.peek-slider__nav svg {
+  width: 56px;
+  height: 56px;
+  pointer-events: none;
+}
+
+.peek-slider__nav--prev {
+  left: 0;
+  justify-content: center;
+}
+
+.peek-slider__nav--next {
+  right: 0;
+  justify-content: center;
+}
+
+/* This makes the whole preview side clickable, not just the icon */
+.peek-slider__nav::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+/* Mobile: skinnier preview click areas */
+@media (max-width: 991px) {
+  .peek-slider__nav {
+    width: 12%;
+    min-width: 30px;
+    padding-inline: .25rem;
+  }
+
+  .peek-slider__nav svg {
+    width: 46px;
+    height: 46px;
+  }
+
+  .peek-slider .swiper-slide img {
+    height: clamp(240px, 55vw, 420px);
+  }
+}
+
+@media (max-width: 767.9px) {
+  .hide-on-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .break-on-desktop {
+    display: block;
+  }
+
+  main#primary-content {
+      padding-bottom: 6rem;
+  }
+
+  .designdays-header {
+    padding-block: 9rem;
+  }
+
+  .event-card {
+    flex-direction: row;
+    padding: 2rem;
+    gap: 2rem;
+  }
+
+  .event-card-title,
+  .details-title {
+    font-size: 35px;
+    margin-bottom: 1.5rem;
+  }
+
+  .event-card-date {
+    font-size: 26px;
+  }
+
+  .event-card-time {
+    font-size: 24px;
+    margin-bottom: 1.5rem;
+  }
+
+  .event-card-desc {
+    font-size: 20px;
+    margin-bottom: 1.5rem;
+    max-width: 700px;
+  }
+
+  .details-desc,
+  .details-link {
+    font-size: 18px;
+    margin-bottom: 1.5rem;
+    max-width: 320px;
+  }
+
+  .section-desc {
+    font-size: 18px;
+  }
+
+  .event-card-cta {
+    font-size: 24px;
+  }
+
+  .details-grid-wrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 2rem;
+    gap: .5rem;
+  }
+
+  .new-products-carousel-wrapper {
+    padding: 3rem 2rem;
+  }
+}
