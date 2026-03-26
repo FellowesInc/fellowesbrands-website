@@ -11,6 +11,11 @@
     margin-inline: auto;
 }
 
+.mw-1150 {
+  max-width: 1150px !important;
+  margin-inline: auto;
+}
+
 .fw-500 {
   font-weight: 500 !important;
 }
@@ -181,6 +186,7 @@
   line-height: 20px;
   font-weight: 600;
   color: #7c7c80;
+  text-wrap: pretty;
 }
 
 .feature-item-desc {
