@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
+  const html = document.documentElement;
   const body = document.body;
   const nav = document.getElementById('fullscreen-nav');
   const headerToggle = document.querySelector('.site-header .nav-toggle');
@@ -7,31 +8,54 @@ document.addEventListener('DOMContentLoaded', function () {
   const desktopMQ = window.matchMedia('(min-width: 992px)');
 
   let closeTimeout;
+  let mobileScrollY = 0;
 
-  /* ---------------------------
-     Scroll Lock (unchanged)
-  --------------------------- */
+  function updateScrollbarState() {
+    const hasVerticalScrollbar = html.scrollHeight > window.innerHeight;
+    html.classList.toggle('has-scrollbar', hasVerticalScrollbar && desktopMQ.matches);
+  }
+
   function lockBodyScroll() {
-    const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
-
-    body.classList.add('nav-open');
-    body.style.overflow = 'hidden';
-
-    if (scrollbarWidth > 0) {
-      body.style.paddingRight = `${scrollbarWidth}px`;
+    if (desktopMQ.matches) {
+      body.classList.add('nav-open');
+      body.style.overflow = 'hidden';
+      body.style.paddingRight = '';
+      body.style.top = '';
+      body.style.width = '';
+      body.classList.remove('nav-locked-mobile');
+    } else {
+      mobileScrollY = window.scrollY || window.pageYOffset || 0;
+      body.classList.add('nav-open', 'nav-locked-mobile');
+      body.style.top = `-${mobileScrollY}px`;
+      body.style.overflow = '';
+      body.style.paddingRight = '';
+      body.style.width = '100%';
     }
   }
 
   function unlockBodyScroll() {
-    body.classList.remove('nav-open');
-    body.style.overflow = '';
-    body.style.paddingRight = '';
+    if (body.classList.contains('nav-locked-mobile')) {
+      const scrollY = Math.abs(parseInt(body.style.top || '0', 10)) || 0;
+
+      body.classList.remove('nav-locked-mobile');
+      body.classList.remove('nav-open');
+      body.style.top = '';
+      body.style.width = '';
+      body.style.overflow = '';
+      body.style.paddingRight = '';
+
+      window.scrollTo(0, scrollY);
+    } else {
+      body.classList.remove('nav-open');
+      body.style.overflow = '';
+      body.style.paddingRight = '';
+      body.style.top = '';
+      body.style.width = '';
+    }
   }
 
-  /* ---------------------------
-     Open / Close Nav
-  --------------------------- */
   function openNav() {
+    updateScrollbarState();
     nav.classList.add('is-open');
     nav.setAttribute('aria-hidden', 'false');
     headerToggle.setAttribute('aria-expanded', 'true');
@@ -45,17 +69,21 @@ document.addEventListener('DOMContentLoaded', function () {
     headerToggle.setAttribute('aria-expanded', 'false');
     overlayToggle.setAttribute('aria-expanded', 'false');
     unlockBodyScroll();
+    updateScrollbarState();
 
     navItems.forEach((item) => {
       item.classList.remove('is-open', 'is-active');
       const trigger = item.querySelector('.nav-link--trigger');
-      if (trigger) trigger.setAttribute('aria-expanded', 'false');
+      if (trigger) {
+        trigger.setAttribute('aria-expanded', 'false');
+      }
     });
   }
 
-  /* ---------------------------
-     Mobile Behavior (unchanged)
-  --------------------------- */
+  updateScrollbarState();
+  window.addEventListener('resize', updateScrollbarState);
+  window.addEventListener('load', updateScrollbarState);
+
   function handleMobileClick(item, trigger) {
     const isOpen = item.classList.contains('is-open');
 
@@ -73,9 +101,6 @@ document.addEventListener('DOMContentLoaded', function () {
     trigger.setAttribute('aria-expanded', String(!isOpen));
   }
 
-  /* ---------------------------
-     Desktop Behavior (UPDATED)
-  --------------------------- */
   function openItem(item) {
     clearTimeout(closeTimeout);
 
@@ -91,7 +116,7 @@ document.addEventListener('DOMContentLoaded', function () {
   function scheduleClose(item) {
     closeTimeout = setTimeout(() => {
       item.classList.remove('is-active');
-    }, 120); // small delay = smoother UX
+    }, 120);
   }
 
   navItems.forEach((item) => {
@@ -99,7 +124,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const submenu = item.querySelector('.nav-submenu');
     if (!trigger || !submenu) return;
 
-    /* Mobile click */
     trigger.addEventListener('click', function (e) {
       if (!desktopMQ.matches) {
         e.preventDefault();
@@ -107,7 +131,6 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
 
-    /* Desktop hover logic */
     item.addEventListener('mouseenter', function () {
       if (desktopMQ.matches) {
         openItem(item);
@@ -120,7 +143,6 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
 
-    /* 🔥 KEY ADDITION: keep open when hovering submenu */
     submenu.addEventListener('mouseenter', function () {
       if (desktopMQ.matches) {
         clearTimeout(closeTimeout);
@@ -134,7 +156,6 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
 
-    /* Accessibility */
     trigger.addEventListener('focus', function () {
       if (desktopMQ.matches) {
         openItem(item);
@@ -142,9 +163,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  /* ---------------------------
-     Toggle buttons
-  --------------------------- */
   headerToggle.addEventListener('click', function () {
     if (nav.classList.contains('is-open')) {
       closeNav();
@@ -157,15 +175,15 @@ document.addEventListener('DOMContentLoaded', function () {
     closeNav();
   });
 
-  /* ESC close */
   document.addEventListener('keydown', function (e) {
     if (e.key === 'Escape' && nav.classList.contains('is-open')) {
       closeNav();
     }
   });
 
-  /* Reset on breakpoint change */
   desktopMQ.addEventListener('change', function () {
+    updateScrollbarState();
+
     navItems.forEach((item) => {
       item.classList.remove('is-open', 'is-active');
       const trigger = item.querySelector('.nav-link--trigger');
@@ -173,5 +191,9 @@ document.addEventListener('DOMContentLoaded', function () {
         trigger.setAttribute('aria-expanded', 'false');
       }
     });
+
+    if (!nav.classList.contains('is-open')) {
+      unlockBodyScroll();
+    }
   });
 });

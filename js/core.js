@@ -1,5 +1,4 @@
 $(window).on('load', function () {
-  console.log("Core JavaScript is Firing");
 
   // Custom Dynamic Copywrite Date JS
   var footerCopyRight = document.getElementById('copyright-year');

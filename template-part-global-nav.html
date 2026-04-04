@@ -29,7 +29,8 @@
     <header class="site-header" role="banner">
       <div class="site-header__inner">
         <a href="./homepage.html" class="site-logo" aria-label="Homepage">
-          <img src="./img/fbrands-logo-black.svg" alt="Fellowes Brands">
+          <img class="dark-logo" src="./img/fbrands-logo-black.svg" alt="Fellowes Brands">
+          <img class="light-logo" src="./img/fbrands-logo-white.svg" alt="Fellowes Brands">
         </a>
 
         <div class="site-header__actions">
@@ -54,103 +55,103 @@
     <!-- Header -->
     
     <!-- Navbar -->
-  <nav class="fullscreen-nav" id="fullscreen-nav" aria-hidden="true">
-    <div class="fullscreen-nav__inner">
-      <div class="fullscreen-nav__top">
-        <a href="./homepage.html" class="site-logo site-logo--nav" aria-label="Homepage">
-          <img src="./img/fbrands-logo-white.svg" alt="Fellowes Brands">
-        </a>
+    <nav class="fullscreen-nav" id="fullscreen-nav" aria-hidden="true">
+      <div class="fullscreen-nav__inner">
+        <div class="fullscreen-nav__top">
+          <a href="./homepage.html" class="site-logo site-logo--nav" aria-label="Homepage">
+            <img src="./img/fbrands-logo-white.svg" alt="Fellowes Brands">
+          </a>
 
-        <div class="fullscreen-nav__top-actions">
-          <button
-            class="nav-toggle nav-toggle--overlay"
-            type="button"
-            aria-expanded="true"
-            aria-controls="fullscreen-nav"
-            aria-label="Close menu"
-          >
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
+          <div class="fullscreen-nav__top-actions">
+            <button
+              class="nav-toggle nav-toggle--overlay"
+              type="button"
+              aria-expanded="true"
+              aria-controls="fullscreen-nav"
+              aria-label="Close menu"
+            >
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
 
-          <div class="site-lang site-lang--nav">
-            <img src="./img/flag-us.svg" alt="English">
+            <div class="site-lang site-lang--nav">
+              <img src="./img/flag-us.svg" alt="English">
+            </div>
           </div>
         </div>
+
+        <div class="fullscreen-nav__content">
+          <ul class="nav-main">
+            <li class="nav-item menu-item-has-children">
+              <button class="nav-link nav-link--trigger" type="button" aria-expanded="false">
+                Who We Are
+              </button>
+              <ul class="nav-submenu">
+                <li><a href="#">Who We Are</a></li>
+                <li><a href="#">Global Leadership</a></li>
+                <li><a href="#">Family Heritage</a></li>
+                <li><a href="#">Awards & Recognition</a></li>
+                <li><a href="#">Newsroom</a></li>
+                <li><a href="#">Quarter Centry Club</a></li>
+                <li><a href="#">Locations</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item menu-item-has-children">
+              <button class="nav-link nav-link--trigger" type="button" aria-expanded="false">
+                Better WorkLife
+              </button>
+              <ul class="nav-submenu">
+                <li><a href="#">Better Worklife</a></li>
+                <li><a href="#">Inspiration</a></li>
+                <li><a href="#">Portray</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item menu-item-has-children">
+              <button class="nav-link nav-link--trigger" type="button" aria-expanded="false">
+                Our Solutions
+              </button>
+              <ul class="nav-submenu">
+                <li><a href="#">Our Solutions</a></li>
+                <li><a href="#">Business Products</a></li>
+                <li><a href="#">Air Quality Management</a></li>
+                <li><a href="#">Contract Furnishings</a></li>
+                <li><a href="#">Architectural Solutions</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item menu-item-has-children">
+              <button class="nav-link nav-link--trigger" type="button" aria-expanded="false">
+                What Guides Us
+              </button>
+              <ul class="nav-submenu">
+                <li><a href="#">What Guides Us</a></li>
+                <li><a href="#">Culture & Values</a></li>
+                <li><a href="#">GIVE™</a></li>
+                <li><a href="#">Earth™</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item menu-item-has-children">
+              <button class="nav-link nav-link--trigger" type="button" aria-expanded="false">
+                Careers
+              </button>
+              <ul class="nav-submenu">
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Search Jobs</a></li>
+                <li><a href="#">Why Fellowes</a></li>
+                <li><a href="#">Candidate Portal</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
       </div>
-
-      <div class="fullscreen-nav__content">
-        <ul class="nav-main">
-          <li class="nav-item menu-item-has-children">
-            <button class="nav-link nav-link--trigger" type="button" aria-expanded="false">
-              Who We Are
-            </button>
-            <ul class="nav-submenu">
-              <li><a href="#">Who We Are</a></li>
-              <li><a href="#">Global Leadership</a></li>
-              <li><a href="#">Family Heritage</a></li>
-              <li><a href="#">Awards & Recognition</a></li>
-              <li><a href="#">Newsroom</a></li>
-              <li><a href="#">Quarter Centry Club</a></li>
-              <li><a href="#">Locations</a></li>
-            </ul>
-          </li>
-
-          <li class="nav-item menu-item-has-children">
-            <button class="nav-link nav-link--trigger" type="button" aria-expanded="false">
-              Better WorkLife
-            </button>
-            <ul class="nav-submenu">
-              <li><a href="#">Better Worklife</a></li>
-              <li><a href="#">Inspiration</a></li>
-              <li><a href="#">Portray</a></li>
-            </ul>
-          </li>
-
-          <li class="nav-item menu-item-has-children">
-            <button class="nav-link nav-link--trigger" type="button" aria-expanded="false">
-              Our Solutions
-            </button>
-            <ul class="nav-submenu">
-              <li><a href="#">Our Solutions</a></li>
-              <li><a href="#">Business Products</a></li>
-              <li><a href="#">Air Quality Management</a></li>
-              <li><a href="#">Contract Furnishings</a></li>
-              <li><a href="#">Architectural Solutions</a></li>
-            </ul>
-          </li>
-
-          <li class="nav-item menu-item-has-children">
-            <button class="nav-link nav-link--trigger" type="button" aria-expanded="false">
-              What Guides Us
-            </button>
-            <ul class="nav-submenu">
-              <li><a href="#">What Guides Us</a></li>
-              <li><a href="#">Culture & Values</a></li>
-              <li><a href="#">GIVE™</a></li>
-              <li><a href="#">Earth™</a></li>
-            </ul>
-          </li>
-
-          <li class="nav-item menu-item-has-children">
-            <button class="nav-link nav-link--trigger" type="button" aria-expanded="false">
-              Careers
-            </button>
-            <ul class="nav-submenu">
-              <li><a href="#">Careers</a></li>
-              <li><a href="#">Search Jobs</a></li>
-              <li><a href="#">Why Fellowes</a></li>
-              <li><a href="#">Candidate Portal</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+    </nav>
     <!-- Navbar -->
 
-    <!-- Temporary Hero -->
+    <!-- Start Project Here -->
     <main id="primary-content" class="position-relative">
       <div class="p-5 text-center bg-image" style="background-color: var(--fds-grey); height: 100vh">
         <div class="d-flex justify-content-center align-items-center h-100">
@@ -165,7 +166,7 @@
         </div>
       </div>
     </main>
-    <!-- Temporary Hero -->
+    <!-- End Project Here -->
 
     <!-- Global Footer Start -->
 
