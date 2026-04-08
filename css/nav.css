@@ -187,16 +187,16 @@ body.nav-open .site-header .nav-toggle span {
   margin-inline: auto;
 }
 
-.nav-item {
+.fullscreen-nav .nav-item {
   position: relative;
 }
 
-.nav-item + .nav-item {
+.fullscreen-nav .nav-item + .nav-item {
   margin-top: 1rem;
 }
 
-.nav-link,
-.nav-link--trigger {
+.fullscreen-nav .nav-link,
+.fullscreen-nav .nav-link--trigger {
   font: inherit;
   font-size: var(--nav-title-size-mobile);
   font-weight: 600;
@@ -212,29 +212,29 @@ body.nav-open .site-header .nav-toggle span {
   transition: color 0.2s ease;
 }
 
-.nav-item.is-active > .nav-link,
-.nav-item.is-active > .nav-link--trigger,
-.nav-item.is-open > .nav-link--trigger {
+.fullscreen-nav .nav-item.is-active > .nav-link,
+.fullscreen-nav .nav-item.is-active > .nav-link--trigger,
+.fullscreen-nav .nav-item.is-open > .nav-link--trigger {
   color: var(--text-light);
 }
 
-.nav-submenu {
+.fullscreen-nav .nav-submenu {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.4s ease-in-out, margin-top 0.4s ease-in-out;
   padding-left: 1rem;
 }
 
-.nav-item.is-open > .nav-submenu {
+.fullscreen-nav .nav-item.is-open > .nav-submenu {
   max-height: 500px;
   margin-top: 0.75rem;
 }
 
-.nav-submenu li + li {
+.fullscreen-nav .nav-submenu li + li {
   margin-top: 0.5rem;
 }
 
-.nav-submenu a { 
+.fullscreen-nav .nav-submenu a { 
   position: relative;
   color: var(--text-muted);
   text-decoration: none;
@@ -246,7 +246,7 @@ body.nav-open .site-header .nav-toggle span {
   gap: .5rem;
 }
 
-.nav-submenu a::before {
+.fullscreen-nav .nav-submenu a::before {
   content: url(../img/icon-bars.svg);
   display: block;
   width: 100%;
@@ -259,12 +259,12 @@ body.nav-open .site-header .nav-toggle span {
   transition: all .5s ease-in-out;
 }
 
-.nav-submenu a:hover {
+.fullscreen-nav .nav-submenu a:hover {
   color: var(--text-light);
   padding-left: 1.5rem;
 }
 
-.nav-submenu a:hover::before {
+.fullscreen-nav .nav-submenu a:hover::before {
   opacity: 1;
 }
 
@@ -297,28 +297,28 @@ body.nav-open .site-header .nav-toggle span {
     margin-inline: auto;
   }
 
-  .nav-link,
-  .nav-link--trigger {
+  .fullscreen-nav .nav-link,
+  .fullscreen-nav .nav-link--trigger {
     font-size: var(--nav-title-size-desktop);
   }
 
-  .nav-item + .nav-item {
+  .fullscreen-nav .nav-item + .nav-item {
     margin-top: 0.75rem;
   }
 
-  .nav-item.menu-item-has-children {
+  .fullscreen-nav .nav-item.menu-item-has-children {
     position: relative;
     width: var(--nav-main-col-width);
   }
 
-  .nav-link--trigger {
+  .fullscreen-nav .nav-link--trigger {
     position: relative;
     display: inline-block;
     width: auto;
     z-index: 2;
   }
 
-  .nav-link--trigger::before {
+  .fullscreen-nav .nav-link--trigger::before {
     content: "";
     position: absolute;
     left: 100%;
@@ -328,7 +328,7 @@ body.nav-open .site-header .nav-toggle span {
     top: -0.5em;
   }
 
-  .nav-link--trigger::after {
+  .fullscreen-nav .nav-link--trigger::after {
     content: "";
     position: absolute;
     top: 0.6em;
@@ -345,13 +345,13 @@ body.nav-open .site-header .nav-toggle span {
     transition: opacity 0.2s ease, visibility 0.2s ease;
   }
 
-  .nav-item.menu-item-has-children.is-active > .nav-link--trigger::after,
-  .nav-item.menu-item-has-children:hover > .nav-link--trigger::after {
+  .fullscreen-nav .nav-item.menu-item-has-children.is-active > .nav-link--trigger::after,
+  .fullscreen-nav .nav-item.menu-item-has-children:hover > .nav-link--trigger::after {
     opacity: 1;
     visibility: visible;
   }
 
-  .nav-item.menu-item-has-children > .nav-submenu {
+  .fullscreen-nav .nav-item.menu-item-has-children > .nav-submenu {
     position: absolute;
     top: 0;
     left: var(--nav-submenu-col-start);
@@ -368,18 +368,18 @@ body.nav-open .site-header .nav-toggle span {
     transition: opacity 0.2s ease, visibility 0.2s ease;
   }
 
-  .nav-item.menu-item-has-children.is-active > .nav-submenu,
-  .nav-item.menu-item-has-children:hover > .nav-submenu {
+  .fullscreen-nav .nav-item.menu-item-has-children.is-active > .nav-submenu,
+  .fullscreen-nav .nav-item.menu-item-has-children:hover > .nav-submenu {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
   }
 
-  .nav-item.menu-item-has-children > .nav-submenu li + li {
+  .fullscreen-nav .nav-item.menu-item-has-children > .nav-submenu li + li {
     margin-top: 0.75rem;
   }
 
-  .nav-item.menu-item-has-children > .nav-submenu a {
+  .fullscreen-nav .nav-item.menu-item-has-children > .nav-submenu a {
     font-size: 1rem;
     white-space: nowrap;
   }

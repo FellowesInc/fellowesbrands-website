@@ -1,0 +1,22 @@
+.text-gold {
+    color: var(--fds-gold) !important;
+}
+
+.border-gold {
+    border-color: var(--fds-gold) !important;
+}
+
+.inspiration-landing-sub-title {
+    font-size: 1.813rem;
+    line-height: 2.125rem;
+    color: #232426;
+}
+
+.decade-bm-8 {
+    line-height: 5rem;
+    padding-top: 5rem;
+}
+
+.border-rows-bottom {
+    border-bottom: 1px solid;
+}

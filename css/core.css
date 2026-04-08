@@ -7,6 +7,10 @@
   --fds-yellow: #fdb913;
   --fds-dark-yellow: #D3A013;
   --fds-grey: #808080;
+  --fds-grey-200: #f7f7f7;
+  --fds-gold: #FCCF69;
+  --fds-tan: #f6f5f3;
+  --fds-green: #657471;
 
   --mdb-nav-link-color: --fds-grey;
   --mdb-nav-link-hover-color: --fds-white;
@@ -174,6 +178,15 @@ a,
   transition: all .3s ease-in-out;
 }
 
+.center-underline {
+  display: block;
+}
+
+.center-underline::after {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 @media (min-width: 768px) {
   h1,
   h2 {
@@ -225,6 +238,14 @@ a,
   background-color: transparent !important;
 }
 
+.fds-light-grey-bg {
+  background-color: var(--fds-grey-200);
+}
+
+.fds-green-bg {
+    background-color: var(--fds-green);
+}
+
 /* Helper Classes */
 
 .table-responsive {
@@ -267,6 +288,11 @@ a,
 
 .mw-800 {
   max-width: 800px;
+}
+
+.maxW-760 {
+    max-width: 760px;
+    margin-inline: auto;
 }
 
 .maxW-700 {
@@ -374,11 +400,22 @@ a,
 
 /* Global Section Styles */
 
+.header-banner img {
+  height: 600px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+}
+
 .header-banner-text {
   position: absolute;
-  left: 2em;
-  right: 2em;
-  bottom: 2em;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 1400px;
+  padding-inline: 1.5rem;
   color: #fff;
 }
 
@@ -401,11 +438,13 @@ a,
 }
 
 @media (min-width: 768px) {
+  .header-banner img {
+    height: 700px;
+  }
+
   .header-banner-text {
-    left: 3em;
-    bottom: 3em;
-    right: unset;
-    max-width: 550px;
+    bottom: 3rem;
+    padding-inline: 3rem;
   }
 
   .banner-text__header {

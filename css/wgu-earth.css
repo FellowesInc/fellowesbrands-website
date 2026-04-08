@@ -1,0 +1,731 @@
+.container-sm { max-width: 63rem; }
+.h1 { font-size: clamp(2.5rem, 12vw, 8rem); }
+.h1-head { font-size: clamp(1.5rem, 7.5vw, 2.875rem); }
+.h2 { font-size: clamp(2rem, 6vw, 4rem); }
+.h3 { font-size: clamp(2rem, 6vw, 3rem); z-index: 2; position: relative; }
+.h4 { font-size: 1.75rem; }
+.h5 { font-size: 1.5rem; }
+.h6 { font-size: 1.25rem; }
+.text-outline { color: #fff; -webkit-text-stroke: max(.6px, 0.00625em) #cccccc; }
+.display-2 { font-size: clamp(3.25rem, 14vw, 9.375rem); font-weight: 800; line-height: 1.1em; line-height: 1em;}
+.page-decoration { display: flex; justify-content: space-between;margin: 0 auto; position: absolute; top: 0; left: 0;right: 0;bottom: 0; z-index: -1;}
+.vertical-line { width: 1px; height: 100%; background-color: #F4F4F4;}
+.last-section { padding: 7.5rem 0 10rem;}
+@media screen and (max-width: 992px) { .last-section { padding: 3.125rem 0 2.5rem; } .mobile-text-capitalize { text-transform: capitalize !important; } .lead-lg {font-size: 0.938rem;}}
+.text-black { color: #2E343D !important; }
+.text-dark {color: #16191E !important; }
+.text-secondary { color: #777777 !important;}
+.lead-lg { font-size: 1.063rem; }
+.lead-sm { font-size: 0.813rem; }
+/*.top-scrolled-up .nav-link, .top-scrolled-up .menu-link { color: var(--fds-white); }*/
+@media screen and (max-width: 480px) { .lead-lg { font-size: 0.938rem; } }
+
+.hero {
+   height: 43.75rem;
+    min-height: 43.75rem;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 33%, rgba(0, 0, 0, 0.5) 100%), url('../img/db/sustainable-\ nnovation\ hero.webp');
+  background-size: cover;
+}
+
+@media (max-width: 1200px) {
+  .hero {
+    height: 43.75rem;
+    min-height: 43.75rem;
+  }
+}
+@media (max-width: 768px) {
+  .hero {
+    height: 41.875rem;
+    min-height: 41.875rem;
+  }
+}
+  .hero .h1 .text-nowrap {
+    margin-left: auto;
+  }
+  
+  .hero-nav {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+    min-height: 2.35rem;
+  }
+  
+  .hero-active-link {
+    position: relative;
+  }
+  
+  .hero-active-link::before {
+    content: url("../img/db/Polygon\ 2.svg");
+    position: absolute;
+    bottom: -.85rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .btn-group.dropup {
+    display: none;
+    max-width: 100vw;
+    margin: 0 auto;
+  }
+  
+  .dropdown-menu,
+  .btn-group.dropup button {
+    max-width: 17rem;
+    border-radius: 1.25rem;
+    width: 100%;
+  }
+  .btn-group.dropup button {
+    letter-spacing: 0.3em;
+    background: #5C95CD;
+    box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.16);
+    border: none;
+    min-height: 2.75rem;
+  }
+  
+  
+  .dropdown-item--active {
+    background: rgba(92, 149, 205, 0.1);
+    color: #5C95CD;
+  }
+  
+  .impact-decoration,
+  .strategy-decoration,
+  .educing-decoration {
+    letter-spacing: 0.1em;
+    font-weight: 800;
+    position: absolute;
+    left: 2.5%;
+    transform: translateY(-67%);
+    z-index: -1;
+  }
+  
+  .position-image--right {
+    left: 10.5rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 38.313rem;
+    height: auto;
+    position: relative;
+  }
+  
+  .impact-bg {
+    background-color: #F6F5F3;
+    z-index: -1;
+  }
+  
+  .impact-decoration {
+    left: 50%;
+    transform: translate(-50%, -67%);
+    color: #F6F5F3;
+    z-index: 0;
+  }
+  
+  .sustain-decoration {
+    letter-spacing: 0.1em;
+    font-weight: 800;
+    width: 100%;
+    text-align: right;
+    padding-right: 2vw;
+  }
+  
+  .position-image--left {
+    position: relative;
+    right: 10.5rem;
+  }
+  
+  .improvement-decoration {
+    word-wrap: break-word;
+    line-height: 1e;
+    max-width: 55.313rem;
+    z-index: -1;
+    bottom: 0;
+    left: -.5rem;
+    letter-spacing: 0.1em;
+  }
+  
+  .reducing-decoration {
+    width: 58.75rem;
+    bottom: -4.8rem;
+    transform: none;
+    left: auto;
+    right: -28%;
+    letter-spacing: 0.1em;
+    z-index: -1;
+  }
+  
+  @media screen and (max-width: 1439px) {
+    .position-image--left,
+    .position-image--right {
+      position: static;
+      width: 100%;
+    }
+    .improvement-decoration {
+      max-width: 80vw;
+      font-size: 14vw;
+      left: .6rem;
+      bottom: -1.3rem;
+    }
+  }
+  
+  @media screen and (max-width: 991px) {
+    .hero .h1 .text-nowrap {
+      margin-left: 0;
+    }
+    .sustain-decoration {
+      padding-right: .875rem;
+    }
+    .reducing-decoration {
+      font-size: 13vw;
+      left: auto;
+      right: auto;
+      bottom: -5.2rem;
+    }
+  }
+  
+  
+  @media screen and (max-width: 480px) {
+    .h1 {
+      font-size: 2.5rem;
+    }
+    .btn-group.dropup {
+      display: flex;
+    }
+    .difference-decoration {
+      font-size: 3.25rem;
+    }
+    .strategy-decoration {
+        left: 10%;
+        right: auto;
+    }
+  }
+  
+
+.fds-company-dark-grey-bg {
+  background-color: #555555;
+}
+
+.fds-company-green-bg {
+  background-color: #7a861c;
+}
+
+.text-fds-green {
+  color: var(--fds-green);
+}
+
+.h-800 {
+  min-height: 600px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.mw-700 {
+  max-width: 700px;
+}
+
+.mw-635 {
+  max-width: 635px;
+  margin-inline: auto;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
+.company-banner .banner-text__header {
+  font-size: 20px;
+}
+
+.company-banner img {
+  height: 500px;
+  -o-object-position: center;
+  object-position: center;
+}
+
+.quote-section,
+.quote-citation {
+  max-width: 1000px;
+  margin-inline: auto;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 300;
+}
+
+.quote-citation {
+  font-weight: 600;
+}
+
+.john-img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: auto;
+  max-height: 540px;
+}
+
+.john-section-text {
+  position: absolute;
+  top: 3rem;
+  left: 2rem;
+  right: 2rem;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 2rem;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.john-title {
+  font-style: italic;
+  margin-top: 1rem;
+}
+
+.john-quote-mark {
+  max-width: 20px;
+  position: absolute;
+}
+
+.left-quote-mark {
+  top: 1.5rem;
+  left: 0.5rem;
+}
+
+.right-quote-mark {
+  right: 0.5rem;
+  bottom: 4rem;
+}
+
+h2.section-heading {
+  font-size: 40px;
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: 47px;
+  margin-bottom: 1.5rem;
+}
+
+p.section-body {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+.where-going-text {
+  position: absolute;
+  inset: 0;
+}
+
+.green-section-btn {
+  font-size: 13px;
+  line-height: 17px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 0.5rem 3rem;
+  border-radius: 500px;
+  margin-top: 2rem;
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-inline: auto;
+}
+
+.tab-box {
+  padding: 2rem 2rem 1rem 2rem;
+  background-color: var(--fds-tan);
+}
+
+.sas-tab-navs {
+  position: relative;
+  max-width: 400px;
+  margin-inline: auto;
+}
+
+.tab-dropdown {
+  margin: 0;
+  padding: 10px 24px 10px 24px;
+  background: #fff;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+  border-radius: 50px;
+}
+
+.safeairstoriestabbox i.fa-chevron-down {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  right: 20px;
+  pointer-events: none;
+}
+.safeairstoriestabbox .nav-pills .nav-link {
+  background: none;
+  display: block;
+  border-radius: 0;
+  font-size: var(--fds-fs-400);
+  line-height: var(--fds-fs-725);
+  color: var(--fds-black);
+  text-transform: none;
+  margin: 0;
+  padding: 0.25rem 1.5rem;
+  margin-block: 0.25rem;
+  text-align: Left;
+}
+
+.safeairstoriestabbox .nav-pills .nav-link::after {
+  display: none !important;
+}
+
+.safeairstoriestabbox .nav-pills .nav-link:hover {
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 50px;
+}
+
+.safeairstoriestabbox .nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background: #fff;
+  border-radius: 50px;
+  text-transform: capitalize;
+}
+
+.safeairstoriestabbox .tab-img img {
+  min-height: 225px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.tab-logo-box {
+  background: var(--fds-white);
+  height: 100%;
+  padding: 1rem 0;
+}
+
+.tabs-side-title {
+  color: #707070;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 47px;
+}
+
+.tabs-side-desc {
+  display: block;
+  font-size: 18px;
+  line-height: 24px;
+  margin-block: 1.5rem;
+}
+
+.sustain-tab-text {
+  font-weight: 14;
+  line-height: 20px;
+}
+
+#pinContainer {
+  width: 100%;
+  height: 100% !important;
+  overflow: hidden;
+  perspective: 1000;
+  z-index: 1100;
+}
+#slideContainer {
+  width: 100%; /* to contain 4 panels, each with 100% of window width */
+  height: 100%;
+}
+.panel {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  opacity: 0.15;
+}
+.measured-progress-section.panel {
+  opacity: 1;
+}
+
+.panel .panel-img {
+  height: 100vh;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+}
+
+.panel-title {
+  position: absolute;
+  top: 2rem;
+  width: 100%;
+  font-size: 40px;
+  line-height: 47px;
+  font-weight: 800;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.panel-content {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  right: 2rem;
+}
+
+.panel-icon img {
+  max-width: 50px;
+}
+
+.panel-stat {
+  font-size: 110px;
+  line-height: 115px;
+  font-weight: 800;
+}
+
+.panel-desc {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.panel-content-wrapper {
+  max-width: 715px;
+}
+
+.learn-more-title {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 800;
+  line-height: 34px;
+}
+
+.built-better-title {
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 47px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #707070;
+}
+
+.built-better-desc {
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  padding: 1rem 0 1.5rem 0;
+}
+
+.built-better-logos {
+  max-width: 256px;
+  margin-inline: auto;
+}
+
+.built-better-btn {
+  font-size: 10px;
+  text-align: center;
+}
+
+@media (max-width: 1199.98px) {
+  .tab-box .nav-pills {
+    display: none;
+    max-width: 400px;
+    margin-inline: auto;
+  }
+  .tab-box .nav-pills.showpills {
+    display: block;
+  }
+  .safeairstoriestabbox .nav-pills .nav-link.active,
+  .nav-pills .show > .nav-link {
+    background: transparent;
+    display: none;
+  }
+}
+
+@media (min-width: 300px) {
+  .company-banner .banner-text__header {
+    font-size: 32px;
+  }
+}
+
+@media (min-width: 576px) {
+  .john-img {
+    max-height: 610px;
+  }
+}
+
+@media (min-width: 768px) {
+  .h-800 {
+    height: 800px;
+  }
+
+  .company-banner img {
+    height: 700px;
+  }
+
+  .company-banner .banner-text__header {
+    font-size: 46px;
+  }
+
+  .quote-section,
+  .quote-citation {
+    font-size: 25px;
+    line-height: 42px;
+  }
+
+  .john-img {
+    right: 2rem;
+    max-width: 65vw;
+    max-height: 700px;
+  }
+
+  .john-section-text {
+    font-size: 19px;
+    line-height: 32px;
+    max-width: 55vw;
+    padding: 3rem;
+  }
+  .left-quote-mark {
+    top: 2.5rem;
+    left: 1.5rem;
+  }
+
+  .right-quote-mark {
+    right: 2.5rem;
+    bottom: 5.5rem;
+  }
+
+  h2.section-heading {
+    font-size: 45px;
+    line-height: 53px;
+  }
+
+  p.section-body {
+    font-size: 19px;
+    line-height: 30px;
+  }
+
+  .green-section-btn {
+    font-size: 13px;
+    padding: 0.75rem 3rem;
+  }
+
+  .tab-box {
+    padding: 3rem 2rem;
+  }
+
+  .safeairstoriestabbox h2 {
+    font-size: var(--fds-fs-850);
+  }
+
+  .panel-title {
+    text-align: right;
+    right: 2rem;
+  }
+
+  .panel-content-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .panel-icon img {
+    max-width: 65px;
+  }
+
+  .panel-stat {
+    font-size: 130px;
+    line-height: 138px;
+  }
+
+  .panel-desc {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .learn-more-title {
+    font-size: 45px;
+    line-height: 53px;
+    max-width: 941px;
+    margin-inline: auto;
+  }
+
+  .built-better-title {
+    font-size: 45px;
+    line-height: 53px;
+    text-align: left;
+  }
+
+  .built-better-desc {
+    font-size: 19px;
+    line-height: 27px;
+    text-align: left;
+  }
+
+  .built-better-logos {
+    max-width: 360px;
+  }
+
+  .built-better-btn {
+    font-size: 16px;
+    line-height: 17px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 992px) {
+  .john-img {
+    max-width: 45vw;
+    max-height: 700px;
+  }
+
+  .john-section-text {
+    max-width: 100%;
+    right: 350px;
+    padding: 5rem;
+  }
+  .left-quote-mark {
+    top: 4.5rem;
+    left: 3.5rem;
+  }
+
+  .right-quote-mark {
+    right: 3.5rem;
+    bottom: 7.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .tab-box {
+    padding: 6rem 4rem;
+  }
+
+  .safeairstoriestabbox i.fa-chevron-down {
+    display: none;
+  }
+
+  .tab-img {
+    padding: 0;
+  }
+
+  .tab-img img {
+    height: 100%;
+    -o-object-fit: contain;
+    object-fit: contain;
+  }
+
+  .tabs-side-title {
+    font-size: 45px;
+    line-height: 53px;
+  }
+
+  .tabs-side-desc {
+    font-size: 19px;
+    line-height: 27px;
+  }
+
+  .sustain-tab-text {
+    font-weight: 19;
+    line-height: 32px;
+    color: #000;
+  }
+}
+
+@media (min-width: 1400px) {
+  .john-quote {
+    max-width: 90%;
+  }
+}

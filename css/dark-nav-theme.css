@@ -1,0 +1,11 @@
+.site-logo img.light-logo {
+  display: block;
+}
+
+.site-logo img.dark-logo {
+  display: none;
+}
+
+.nav-toggle span {
+  background: var(--fds-white);
+}
