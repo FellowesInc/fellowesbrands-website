@@ -63,7 +63,7 @@ body.nav-locked-mobile {
      object-fit: contain;
 }
 
-.site-logo img.light-logo {
+.site-logo img.dark-logo {
   display: none;
 }
 
@@ -99,7 +99,7 @@ body.nav-locked-mobile {
   width: 100%;
   height: 4px;
   border-radius: 2px;
-  background: #222;
+  background: var(--fds-white);
   transform-origin: center;
   transition: transform 0.35s cubic-bezier(.4, 0, .2, 1), opacity 0.2s ease, background 0.2s ease;
 }
