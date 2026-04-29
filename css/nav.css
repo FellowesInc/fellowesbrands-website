@@ -259,7 +259,7 @@ body.nav-open .site-header .nav-toggle-icon span {
 }
 
 .fullscreen-nav .nav-submenu a::before {
-  content: url(../img/icon-bars.svg);
+  content: url(//cdn.fellowes.com/assets/repositories/templates/r01/fellowesbrands.com/~/_includes/img/icon-bars.svg);
   display: block;
   width: 100%;
   max-width: 20px;
@@ -391,7 +391,6 @@ body.nav-open .site-header .nav-toggle-icon span {
     position: absolute;
     top: 0;
     right: 100%;
-    width: calc(var(--nav-line-end-gap) + 1rem);
     width: var(--nav-line-end-gap);
     height: var(--nav-hover-bridge-height);
     background: transparent;
