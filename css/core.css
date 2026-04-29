@@ -557,9 +557,12 @@ a,
 .btn-primary {
   background: #719bd5;
   color: #fff !important;
-  font-size: var(--fds-fs-500);
+  font-size: var(--fds-fs-350);
   border-radius: 50px;
   box-shadow: 0 4px 9px -4px #3b71ca61;
+  text-transform: capitalize;
+  line-height: 1;
+  padding: .75rem 2rem;
 }
 
 .btn-primary:first-child:hover,
@@ -570,6 +573,26 @@ a,
   background: #4c89d9;
   color: #fff;
   box-shadow: 0 4px 9px -4px #3b71ca61;
+}
+
+.btn-black {
+  background: #000;
+  box-shadow: 0 4px 9px -4px #00000057;
+}
+
+.btn-black:first-child:hover,
+.btn-black:focus-visible,
+.btn-black:hover,
+.btn-black:focus,
+:not(.btn-check) + .btn-black:hover {
+  box-shadow: 0 4px 9px -4px #00000057;
+}
+
+@media (min-width: 768px) {
+  .btn-primary {
+    font-size: var(--fds-fs-500);
+    padding: 1rem 2.5rem;
+  }
 }
 
 /* Disabled Button Fixes */

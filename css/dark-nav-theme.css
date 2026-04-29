@@ -6,6 +6,10 @@
   display: block;
 }
 
-.nav-toggle span {
+.site-header-nav-toggle-label {
+  color: #000;
+}
+
+.nav-toggle-icon span {
   background: var(--fds-black);
 }

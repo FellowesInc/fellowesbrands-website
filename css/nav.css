@@ -74,19 +74,13 @@ body.nav-locked-mobile {
   gap: 0.75rem;
 }
 
-.site-lang img {
-  width: 35px;
-  height: auto;
-  display: block;
-}
-
 /* Toggle button */
 .nav-toggle {
-  width: 30px;
-  height: 20px;
   display: inline-flex;
   flex-direction: column;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
   position: relative;
   background: transparent;
   border: 0;
@@ -94,7 +88,24 @@ body.nav-locked-mobile {
   cursor: pointer;
 }
 
-.nav-toggle span {
+.nav-toggle-label {
+  display: none;
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--fds-white);
+}
+
+.nav-toggle-icon {
+  width: 30px;
+  height: 20px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.nav-toggle-icon span {
   display: block;
   width: 100%;
   height: 4px;
@@ -104,27 +115,27 @@ body.nav-locked-mobile {
   transition: transform 0.35s cubic-bezier(.4, 0, .2, 1), opacity 0.2s ease, background 0.2s ease;
 }
 
-.nav-toggle--overlay span {
+.nav-toggle--overlay .nav-toggle-icon span {
   background: #fff;
 }
 
 /* Animate into X */
-body.nav-open .site-header .nav-toggle span:nth-child(1),
-.fullscreen-nav.is-open .nav-toggle--overlay span:nth-child(1) {
+body.nav-open .site-header .nav-toggle-icon span:nth-child(1),
+.fullscreen-nav.is-open .nav-toggle--overlay .nav-toggle-icon span:nth-child(1) {
   transform: translateY(10px) rotate(45deg);
 }
 
-body.nav-open .site-header .nav-toggle span:nth-child(2),
-.fullscreen-nav.is-open .nav-toggle--overlay span:nth-child(2) {
+body.nav-open .site-header .nav-toggle-icon span:nth-child(2),
+.fullscreen-nav.is-open .nav-toggle--overlay .nav-toggle-icon span:nth-child(2) {
   opacity: 0;
 }
 
-body.nav-open .site-header .nav-toggle span:nth-child(3),
-.fullscreen-nav.is-open .nav-toggle--overlay span:nth-child(3) {
+body.nav-open .site-header .nav-toggle-icon span:nth-child(3),
+.fullscreen-nav.is-open .nav-toggle--overlay .nav-toggle-icon span:nth-child(3) {
   transform: translateY(-6px) rotate(-45deg);
 }
 
-body.nav-open .site-header .nav-toggle span {
+body.nav-open .site-header .nav-toggle-icon span {
   background: #222;
 }
 
@@ -285,6 +296,10 @@ body.nav-open .site-header .nav-toggle span {
   .site-logo img,
   .site-logo--nav img {
     max-height: 45px;
+  }
+
+  .nav-toggle-label {
+    display: block;
   }
 
   .fullscreen-nav__inner {

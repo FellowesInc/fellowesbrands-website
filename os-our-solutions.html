@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Global Nav Template</title>
+    <title>Our Solutions | Fellowes Brands</title>
     <!-- MDB icon -->
     <link rel="icon" href="./img/Favicon.ico" type="image/x-icon" />
     <!-- Font Awesome -->
@@ -20,6 +20,8 @@
     <!-- Global Styles -->
     <link rel="stylesheet" href="./css/core.css" />
     <link rel="stylesheet" href="./css/nav.css" />
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="./css/os-our-solutions.css" />
   </head>
 
   <body style="position: relative">
@@ -41,13 +43,14 @@
             aria-controls="fullscreen-nav"
             aria-label="Toggle menu"
           >
-            <span class="nav-toggle-label site-header-nav-toggle-label" aria-hidden="true">Menu</span>
-            <span class="nav-toggle-icon" aria-hidden="true">
-              <span></span>
-              <span></span>
-              <span></span>
-            </span>
+            <span></span>
+            <span></span>
+            <span></span>
           </button>
+
+          <div class="site-lang" >
+            <img src="./img/flag-us.svg" alt="English">
+          </div>
         </div>
       </div>
     </header>
@@ -69,13 +72,14 @@
               aria-controls="fullscreen-nav"
               aria-label="Close menu"
             >
-            <span class="nav-toggle-label" aria-hidden="false">Menu</span>
-            <span class="nav-toggle-icon" aria-hidden="false">
               <span></span>
               <span></span>
               <span></span>
-            </span>
             </button>
+
+            <div class="site-lang site-lang--nav">
+              <img src="./img/flag-us.svg" alt="English">
+            </div>
           </div>
         </div>
 
@@ -151,18 +155,95 @@
 
     <!-- Start Project Here -->
     <main id="primary-content" class="position-relative">
-      <div class="p-5 text-center bg-image" style="background-color: var(--fds-grey); height: 100vh">
-        <div class="d-flex justify-content-center align-items-center h-100">
-          <div class="text-white">
-            <h1 class="mb-md-5 mb-4 fw-bold">Hero Section placeholder</h1>
-            <h3 class="mb-0">
-              <a href="#" class="hero-link">
-                Call to Action
-              </a>
-            </h3>
+      <!-- Hero Section -->
+      <section class="band position-relative dark-img-overlay header-banner mb-1">
+        <img src="./img/os-our-solutions/header-img-desktop.jpg" class="img-fluid w-100 d-none d-md-block">
+        <img src="./img/os-our-solutions/header-img-mobile.jpg" class="img-fluid w-100 d-block d-md-none">
+        <div class="header-banner-text">
+          <h1 class="banner-text__header">
+              Our Solutions
+          </h1>
+        </div>
+      </section>
+
+      <!-- Jumpnav Bar -->
+      <nav class="in-page-nav" aria-label="Section navigation">
+        <ul class="in-page-nav__list">
+          <li class="in-page-nav__item">
+            <a class="in-page-nav__link" href="#contract-furnishings">
+              Contract Furnishings
+            </a>
+          </li>
+
+          <li class="in-page-nav__item">
+            <a class="in-page-nav__link" href="#architectural-solutions">
+              Architectural Solutions
+            </a>
+          </li>
+
+          <li class="in-page-nav__item">
+            <a class="in-page-nav__link" href="#air-quality-management">
+              Air Quality Management
+            </a>
+          </li>
+
+          <li class="in-page-nav__item">
+            <a class="in-page-nav__link" href="#business-products">
+              Business Products
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Contract Furnishings Section -->
+      <section id="contract-furnishings" class="contract-furnishings-section py-5">
+        <div class="container px-4 py-md-5">
+          <div class="row">
+            <div class="col-12 text-center">
+              <h2 class="section-title">Contract Furnishings</h2>
+              <div class="section-desc mt-3 mb-4 mb-md-5">
+                Thoughtfully designed solutions that bring flexibility, comfort, and cohesion to modern workspaces.
+              </div>
+              <a class="btn btn-primary btn-black" href="https://www.fellowes.com/us/en/catalog/contract-interiors" target="_blank">Explore All</a>
+              <div class="product-grid">
+                <a href="" class="product-grid-item">
+                  <img src="./img/os-our-solutions/ci-monitor-arms.jpg" alt="Image of multiple Monitor Arms on display">
+                  <h3>Monitor Arms</h3>
+                </a>
+                <a href="" class="product-grid-item">
+                  <img src="./img/os-our-solutions/ci-tables.jpg" alt="Image of multiple Tables on display">
+                  <h3>Tables</h3>
+                </a>
+                <a href="" class="product-grid-item">
+                  <img src="./img/os-our-solutions/ci-table-enhancements.jpg" alt="Image of multiple Enhancements on display">
+                  <h3>Table Enhancements</h3>
+                </a>
+                <a href="" class="product-grid-item">
+                  <img src="./img/os-our-solutions/ci-keyboard-managers.jpg" alt="Image of a Keyboard Manager on display">
+                  <h3>Keyboard Managers</h3>
+                </a>
+                <a href="" class="product-grid-item">
+                  <img src="./img/os-our-solutions/ci-seating.jpg" alt="Image of multiple office chairs in a row">
+                  <h3>Seating</h3>
+                </a>
+                <a href="" class="product-grid-item">
+                  <img src="./img/os-our-solutions/ci-markerboards.jpg" alt="Image of multiple Markerboards on display">
+                  <h3>Markerboards</h3>
+                </a>
+                <a href="" class="product-grid-item">
+                  <img src="./img/os-our-solutions/ci-lighting.jpg" alt="Image of a lamp on a desktop">
+                  <h3>Lighting</h3>
+                </a>
+                <a href="" class="product-grid-item">
+                  <img src="./img/os-our-solutions/ci-power-solutions.jpg" alt="Image of a 3-plug power outlet on a desktop">
+                  <h3>Power Solutions</h3>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
+
     </main>
     <!-- End Project Here -->
 
