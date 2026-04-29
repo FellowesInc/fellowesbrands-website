@@ -392,6 +392,7 @@ body.nav-open .site-header .nav-toggle-icon span {
     top: 0;
     right: 100%;
     width: calc(var(--nav-line-end-gap) + 1rem);
+    width: var(--nav-line-end-gap);
     height: var(--nav-hover-bridge-height);
     background: transparent;
   }
