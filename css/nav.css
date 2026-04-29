@@ -16,6 +16,7 @@
   --nav-main-col-width: 520px;
   --nav-submenu-gap: 4.5rem;
   --nav-line-gap: 1rem;
+  --nav-hover-bridge-height: 79px;
 }
 
 html {
@@ -337,10 +338,11 @@ body.nav-open .site-header .nav-toggle-icon span {
     content: "";
     position: absolute;
     left: 100%;
-    width: calc(var(--nav-submenu-col-start) - 100% + var(--nav-line-gap));
+    width: calc(var(--nav-submenu-col-start) - 100% - var(--nav-line-end-gap));
+    height: var(--nav-hover-bridge-height);
+    top: 50%;
+    transform: translateY(-50%);
     background: transparent;
-    height: 2.2em;
-    top: -0.5em;
   }
 
   .fullscreen-nav .nav-link--trigger::after {
@@ -381,6 +383,17 @@ body.nav-open .site-header .nav-toggle-icon span {
     visibility: hidden;
     pointer-events: none;
     transition: opacity 0.2s ease, visibility 0.2s ease;
+    z-index: 3;
+  }
+
+  .fullscreen-nav .nav-item.menu-item-has-children > .nav-submenu::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 100%;
+    width: calc(var(--nav-line-end-gap) + 1rem);
+    height: var(--nav-hover-bridge-height);
+    background: transparent;
   }
 
   .fullscreen-nav .nav-item.menu-item-has-children.is-active > .nav-submenu,
