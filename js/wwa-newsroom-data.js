@@ -6,7 +6,7 @@
         name: "In The News",
         articles: [
           {
-            image: "",
+            image: "https://raw.githubusercontent.com/FellowesInc/fellowesbrands-website/refs/heads/main/img/wwa-newsroom/article-placeholder-img.jpg",
             imageAlt: "Placeholder image for article",
             title: "In The News Article One",
             description: "Short description for this newsroom article.",
@@ -15,7 +15,7 @@
             buttonText: "Learn More"
           },
           {
-            image: "",
+            image: "https://raw.githubusercontent.com/FellowesInc/fellowesbrands-website/refs/heads/main/img/wwa-newsroom/article-placeholder-img.jpg",
             imageAlt: "Placeholder image for article",
             title: "In The News Article Two",
             description: "Short description for this newsroom article.",
@@ -24,7 +24,7 @@
             buttonText: "Learn More"
           },
           {
-            image: "",
+            image: "https://raw.githubusercontent.com/FellowesInc/fellowesbrands-website/refs/heads/main/img/wwa-newsroom/article-placeholder-img.jpg",
             imageAlt: "Placeholder image for article",
             title: "In The News Article Three",
             description: "Short description for this newsroom article.",
@@ -33,7 +33,7 @@
             buttonText: "Learn More"
           },
           {
-            image: "",
+            image: "https://raw.githubusercontent.com/FellowesInc/fellowesbrands-website/refs/heads/main/img/wwa-newsroom/article-placeholder-img.jpg",
             imageAlt: "Placeholder image for article",
             title: "In The News Article Four",
             description: "Short description for this newsroom article.",
@@ -48,7 +48,7 @@
         name: "Press Room",
         articles: [
           {
-            image: "",
+            image: "https://raw.githubusercontent.com/FellowesInc/fellowesbrands-website/refs/heads/main/img/wwa-newsroom/article-placeholder-img.jpg",
             imageAlt: "Placeholder image for article",
             title: "Press Room Article One",
             description: "Short description for this press room article.",
@@ -57,7 +57,7 @@
             buttonText: "Learn More"
           },
           {
-            image: "",
+            image: "https://raw.githubusercontent.com/FellowesInc/fellowesbrands-website/refs/heads/main/img/wwa-newsroom/article-placeholder-img.jpg",
             imageAlt: "Placeholder image for article",
             title: "Press Room Article Two",
             description: "Short description for this press room article.",
@@ -66,7 +66,7 @@
             buttonText: "Learn More"
           },
           {
-            image: "",
+            image: "https://raw.githubusercontent.com/FellowesInc/fellowesbrands-website/refs/heads/main/img/wwa-newsroom/article-placeholder-img.jpg",
             imageAlt: "Placeholder image for article",
             title: "Press Room Article Three",
             description: "Short description for this press room article.",
@@ -75,7 +75,7 @@
             buttonText: "Learn More"
           },
           {
-            image: "",
+            image: "https://raw.githubusercontent.com/FellowesInc/fellowesbrands-website/refs/heads/main/img/wwa-newsroom/article-placeholder-img.jpg",
             imageAlt: "Placeholder image for article",
             title: "Press Room Article Four",
             description: "Short description for this press room article.",

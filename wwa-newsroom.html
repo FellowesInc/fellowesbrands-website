@@ -204,25 +204,19 @@
                         "
                       >
                         <div class="newsroom-grid" data-bind="foreach: articles">
-                          <article class="newsroom-card">
-                            <div class="newsroom-card__image-wrap">
-                              <img
-                                class="newsroom-card__image"
-                                data-bind="attr: { src: image, alt: imageAlt }"
-                              />
-                            </div>
+                          <article class="newsroom-card-wrapper">
+                            <div class="newsroom-card">
+                              <img class="newsroom-card__image" data-bind="attr: { src: image, alt: imageAlt }"/>
 
-                            <div class="newsroom-card__content">
-                              <p class="newsroom-card__date" data-bind="text: postedOn"></p>
-
-                              <h3 class="newsroom-card__title" data-bind="text: title"></h3>
-
-                              <p class="newsroom-card__description" data-bind="text: description"></p>
-
-                              <a
-                                class="newsroom-card__button"
-                                data-bind="attr: { href: url }, text: buttonText"
-                              ></a>
+                              <div class="newsroom-card__content">
+                                <div class="newsroom-card__divider"></div>
+                                <div class="card-content__inner-wrapper">
+                                  <h3 class="newsroom-card__title" data-bind="text: title"></h3>
+                                  <p class="newsroom-card__description" data-bind="text: description"></p>
+                                  <p class="newsroom-card__date" data-bind="text: postedOn"></p>
+                                </div>
+                                <a class="newsroom-card__button" data-bind="attr: { href: url }, text: buttonText"></a>
+                              </div>
                             </div>
                           </article>
                         </div>
