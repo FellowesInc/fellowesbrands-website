@@ -119,6 +119,42 @@
   margin-top: 1rem;
 }
 
+.newsroom-card__image.placeholder {
+  height: 100%;
+  display: block;
+  aspect-ratio: 1 / 1.294;
+}
+
+.results-section,
+.loading-section {
+  transition-property: max-height, opacity;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+  transform-origin: top center;
+}
+
+#primary-content[data-loading='true'] .results-section {
+  max-height: 0px;
+  opacity: 0;
+  display: none;
+}
+
+#primary-content[data-loading='false'] .results-section {
+  max-height: 50000px;
+  opacity: 1;
+}
+
+#primary-content[data-loading='true'] .loading-section {
+  max-height: 50000px;
+  opacity: 1;
+}
+
+#primary-content[data-loading='false'] .loading-section {
+  max-height: 0px;
+  opacity: 0;
+  display: none;
+}
+
 @container article (min-width: 530px) {
   .newsroom-card {
     flex-direction: row;
