@@ -19,6 +19,7 @@
 
 .scrollspy-example .container {
     scroll-margin-top: 68px;
+    min-height: 800px;
 }
 
 .border-rows-bottom {
