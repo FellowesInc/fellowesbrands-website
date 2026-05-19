@@ -125,6 +125,10 @@
   aspect-ratio: 1 / 1.294;
 }
 
+.newsroom-tabs__nav.placeholder {
+  height: 40px;
+}
+
 .results-section,
 .loading-section {
   transition-property: max-height, opacity;

@@ -152,7 +152,7 @@
     <!-- Navbar -->
 
     <!-- Start Project Here -->
-    <main id="primary-content" class="position-relative" data-loading="false">
+    <main id="primary-content" class="position-relative" data-loading="true">
 
         <!-- Hero Section -->
         <section class="header-banner dark-img-overlay position-relative mb-1">
@@ -163,8 +163,8 @@
           </div>
         </section>
 
-        <!-- Newsroom Knockout Section -->
-        <section class="newsroom-template">
+        <!-- Data Loaded Container -->
+        <section class="results-section newsroom-template">
           <div class="newsroom-tabs" data-newsroom-tabs>
             <div
               class="newsroom-tabs__nav"
@@ -191,9 +191,7 @@
               <div class="container px-4">
                 <div class="row">
                   <div class="col-12">
-
-                    <!-- Data Loaded Container -->
-                    <div class="results-section newsroom-tabs__panels" data-bind="foreach: categories">
+                    <div class="newsroom-tabs__panels" data-bind="foreach: categories">
                       <section
                         class="newsroom-tabs__panel"
                         role="tabpanel"
@@ -224,9 +222,23 @@
                         </div>
                       </section>
                     </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
-                    <!-- Data Loading Container -->
-                    <div class="loading-section newsroom-tabs__panels placeholder-glow position-relative">
+        <!-- Data Loading Container -->
+        <section class="loading-section placeholder-glow position-relative">
+          <div class="newsroom-tabs">
+            <div class="newsroom-tabs__nav placeholder"></div>
+
+            <div class="fds-tan-bg">
+              <div class="container px-4">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="newsroom-tabs__panels">
                       <section class="newsroom-tabs__panel">
                         <div class="newsroom-grid">
                           <article class="newsroom-card-wrapper placeholder-wrapper">
