@@ -21,8 +21,6 @@
     <link rel="stylesheet" href="./css/core.css" />
     <link rel="stylesheet" href="./css/nav.css" />
     <!-- Custom Styles -->
-    <link rel="stylesheet" href="./css/company-pages.css" />
-    <link rel="stylesheet" href="./css/company.css" />
     <link rel="stylesheet" href="./css/wgu-what-guides-us.css" />
   </head>
 
@@ -45,14 +43,13 @@
             aria-controls="fullscreen-nav"
             aria-label="Toggle menu"
           >
-            <span></span>
-            <span></span>
-            <span></span>
+            <span class="nav-toggle-label site-header-nav-toggle-label" aria-hidden="true">Menu</span>
+            <span class="nav-toggle-icon" aria-hidden="true">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
           </button>
-
-          <div class="site-lang" >
-            <img src="./img/flag-us.svg" alt="English">
-          </div>
         </div>
       </div>
     </header>
@@ -74,14 +71,13 @@
               aria-controls="fullscreen-nav"
               aria-label="Close menu"
             >
+            <span class="nav-toggle-label" aria-hidden="false">Menu</span>
+            <span class="nav-toggle-icon" aria-hidden="false">
               <span></span>
               <span></span>
               <span></span>
+            </span>
             </button>
-
-            <div class="site-lang site-lang--nav">
-              <img src="./img/flag-us.svg" alt="English">
-            </div>
           </div>
         </div>
 
@@ -157,7 +153,7 @@
 
     <!-- Start Project Here -->
     <main id="primary-content" class="position-relative">
-      <section class="band position-relative dark-img-overlay company-values-banner">
+      <section class="band position-relative dark-img-overlay header-banner">
           <img
             src="./img/wgu-what-guides-us/header-desktop.jpg"
             class="img-fluid w-100 d-none d-md-block"
@@ -170,90 +166,63 @@
             />
           <div class="header-banner-text">
             <h1 class="banner-text__header text-start">What Guides Us</h1>
-            <div class="banner-text__subtitle" >At Fellowes, we consider our purpose to be grounded in something deeper than products and profits. We seek to build a legacy, embrace responsibility, and leverage innovation to solve our biggest challenges.</div>
           </div>
       </section>
 
-      <section class="band py-2 bg-white">
-          <div class="container py-md-2">
-          </div>
-      </section>
-
-      <section class="band text-overlap-img-section mb-2 mb-lg-5 mb-xxl-0 py-4">
-          <div class="container">
-            <div class="row gx-0 isolation-isolate justify-content-center">
-                <div class="content-block col-12 col-lg-6 col-xl-5 order-2 order-lg-1">
-                  <div class="tois-content-wrapper">
-                      <h3 class="tois-content-title">Culture and Values</h3>
-                      <p class="tois-content-desc">
-                        Still owned and led by the Fellowes family, our culture remains unified around
-                        values that were established by our founder over a century ago: serving at the
-                        intersection of family, innovation, quality, and care.
-                      </p>
-                      <div class="position-relative mt-4 text-center text-lg-start">
-                        <a href="./wgu-values.html" class="link-underlined text-black left-underline">Learn More</a>
-                      </div>
-                  </div>
-                </div>
-                <div class="image-block col-12 col-lg-6 col-xl-7 order-1 order-lg-2">
-                  <img
-                      src="./img/wgu-what-guides-us/family-img.jpg"
-                      alt="old photo of original employees with the word Family on top"
-                      class="d-block w-100"
-                      />
-                </div>
+      <section class="py-5">
+        <div class="container mw-1400 px-4 py-lg-4">
+          <div class="row">
+            <div class="col-12">
+              <h2 class="section-title text-center pb-4">
+                At Fellowes, we consider our purpose to be grounded in something deeper than products and profits. We seek to build a legacy, embrace responsibility, and leverage innovation toz solve our biggest challenges.
+              </h2>
             </div>
           </div>
-      </section>
+          <div class="wgu-grid py-4 py-lg-5">
+            <div class="wgu-grid-column">
+              <a href="#" class="wgu-card-wrapper culture-values-card position-relative text-white text-center">
+                <div class="default-state">
+                  <img src="./img/wgu-what-guides-us/CultureAndValues-Type.svg" alt="Culture & Values Icon" class="wgu-card-icon">
+                </div>
 
-      <section class="band text-overlap-img-section mb-2 mb-lg-5 mb-xxl-0 py-4">
-          <div class="container">
-            <div class="row gx-0 isolation-isolate justify-content-center">
-                <div class="content-block col-12 col-lg-6 col-xl-5 order-2 order-lg-1">
-                  <div class="tois-content-wrapper">
-                      <h3 class="tois-content-title">Earth™</h3>
-                      <p class="tois-content-desc">
-                        Earth by Fellowes is a company-wide strategy to adopt and pioneer sustainability in everything we do.
-                      </p>
-                      <div class="position-relative mt-4 text-center text-lg-start">
-                        <a href="./wgu-earth.html" class="link-underlined text-black left-underline">Learn More</a>
-                      </div>
+                <div class="hover-state">
+                  <div class="wgu-card-text">
+                    Family-owned and led, Fellowes is guided by the values established by our founder over a century ago—family, innovation, quality, and care.
                   </div>
+                  <div class="link-underlined center-underline wgu-link-text">Learn More</div>
                 </div>
-                <div class="image-block col-12 col-lg-6 col-xl-7 order-1 order-lg-2">
-                  <img
-                      src="./img/wgu-what-guides-us/earth-img.jpg"
-                      alt="Graphic showing top-down view of water and waves, with the word Earth on top"
-                      class="d-block w-100"
-                      />
+              </a>
+            </div>
+            <div class="wgu-grid-column">
+              <a href="#" class="wgu-card-wrapper earth-card position-relative text-white text-center">
+                <div class="default-state">
+                  <img src="./img/wgu-what-guides-us/Earth-logo-WT-vert.svg" alt="Earth Icon" class="wgu-card-icon">
                 </div>
+
+                <div class="hover-state">
+                  <div class="wgu-card-text">
+                    Earth by Fellowes is a company-wide strategy to adopt and pioneer sustainability in everything we do.
+                  </div>
+                  <div class="link-underlined center-underline wgu-link-text">Learn More</div>
+                </div>
+              </a>
+            </div>
+            <div class="wgu-grid-column">
+              <a href="#" class="wgu-card-wrapper give-card position-relative text-white text-center">
+                <div class="default-state">
+                  <img src="./img/wgu-what-guides-us/GIVE-logo-WT-vert.svg" alt="Give Icon" class="wgu-card-icon">
+                </div>
+
+                <div class="hover-state">
+                  <div class="wgu-card-text">
+                    Guided by our values of care, community, and culture, GIVE partners with organizations to support essential needs in local and global communities.
+                  </div>
+                  <div class="link-underlined center-underline wgu-link-text">Learn More</div>
+                </div>
+              </a>
             </div>
           </div>
-      </section>
-
-      <section class="band text-overlap-img-section mb-2 mb-lg-5 mb-xxl-0 py-4">
-          <div class="container">
-            <div class="row gx-0 isolation-isolate justify-content-center">
-                <div class="content-block col-12 col-lg-6 col-xl-5 order-2 order-lg-1">
-                  <div class="tois-content-wrapper">
-                      <h3 class="tois-content-title">GIVE™</h3>
-                      <p class="tois-content-desc">
-                        Guided by our dedication to care, community, and culture, Fellowes GIVE partners with organizations to help meet some of the most fundamental human needs in our local and global communities.
-                      </p>
-                      <div class="position-relative mt-4 text-center text-lg-start">
-                        <a href="./wgu-give.html" class="link-underlined text-black left-underline">Learn More</a>
-                      </div>
-                  </div>
-                </div>
-                <div class="image-block col-12 col-lg-6 col-xl-7 order-1 order-lg-2">
-                  <img
-                      src="./img/wgu-what-guides-us/give-img.jpg"
-                      alt="Image of volunteers helping patients with the word Give on top"
-                      class="d-block w-100"
-                      />
-                </div>
-            </div>
-          </div>
+        </div>
       </section>
     </main>
     <!-- End Project Here -->
