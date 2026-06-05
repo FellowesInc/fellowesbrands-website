@@ -21,8 +21,6 @@
     <link rel="stylesheet" href="./css/core.css" />
     <link rel="stylesheet" href="./css/nav.css" />
     <!-- Custom Styles -->
-    <link rel="stylesheet" href="./css/company-pages.css" />
-    <link rel="stylesheet" href="./css/design-process.css" />
     <link rel="stylesheet" href="./css/wgu-earth.css">
   </head>
 
@@ -45,14 +43,13 @@
             aria-controls="fullscreen-nav"
             aria-label="Toggle menu"
           >
-            <span></span>
-            <span></span>
-            <span></span>
+            <span class="nav-toggle-label site-header-nav-toggle-label" aria-hidden="true">Menu</span>
+            <span class="nav-toggle-icon" aria-hidden="true">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
           </button>
-
-          <div class="site-lang" >
-            <img src="./img/flag-us.svg" alt="English">
-          </div>
         </div>
       </div>
     </header>
@@ -74,14 +71,13 @@
               aria-controls="fullscreen-nav"
               aria-label="Close menu"
             >
+            <span class="nav-toggle-label" aria-hidden="false">Menu</span>
+            <span class="nav-toggle-icon" aria-hidden="false">
               <span></span>
               <span></span>
               <span></span>
+            </span>
             </button>
-
-            <div class="site-lang site-lang--nav">
-              <img src="./img/flag-us.svg" alt="English">
-            </div>
           </div>
         </div>
 
@@ -158,59 +154,183 @@
     <!-- Start Project Here -->
     <main id="primary-content" class="position-relative">
       <!-- Hero Section -->
-      <section class="band position-relative dark-img-overlay company-values-banner mb-1">
-          <img src="./img/wgu-earth/header-earth-desktop.jpg"
-            class="img-fluid w-100 d-none d-md-block"
-            />
-          <img src="./img/wgu-earth/header-earth-mobile.jpg"
-            class="img-fluid w-100 d-block d-md-none"
-            />
-          <div class="header-banner-text">
-            <h1 class="banner-text__header text-start">SUSTAINABILITY AS STRATEGY</h1>
-            <div class="banner-text__subtitle">"We believe that it is our innate responsibility to embrace our core value of 'Care' in all that we do, including how we treat people, manage our resources, care for the needs of vulnerable individuals, and act as good stewards of our planet." 
-                - John Fellowes, CEO
-            </div>
+      <section class="position-relative dark-img-overlay earth-header-banner">
+        <div class="john-header-wrapper position-relative">
+          <div class="header-text-wrapper">
+            <img class="john-quote-icon" src="./img/wgu-earth/icon-quote.svg" alt="decorative - quote icon" />Earth by Fellowes reflects our renewed commitment to sustainability across every part of our business. Both aspirational and practical, it guides us toward new ways of working that protect and enhance the Better WorkLife for generations to come.”
+            <span>- John Fellowes, CEO</span>
           </div>
+          <img src="./img/wgu-earth/John-TopBanner-Mobile.png" alt="Image of John Fellowes" class="john-header-img d-sm-none">
+          <img src="./img/wgu-earth/John-TopBanner-tablet.png" alt="Image of John Fellowes" class="john-header-img d-none d-sm-block d-md-none">
+          <img src="./img/wgu-earth/John-TopBanner-Desktop.png" alt="Image of John Fellowes" class="john-header-img d-none d-md-block">
+        </div>
+        <div class="header-banner-text">
+          <h1 class="banner-text__header text-end text-lg-start">Earth</h1>
+        </div>
       </section>
 
-      <!-- Grey Text Section -->
-      <section
-          class="d-flex flex-column justify-content-center align-items-center px-4 py-5 text-white text-center fds-company-dark-grey-bg mb-1" >
-          <div class="py-md-4">
-            <div class="quote-section">
-                Earth by Fellowes represents our renewed commitment to sustainable practices at every level of our operations. Both aspirational and practical, Earth directs our steps to become an organization that pioneers new ways of doing business –
-            </div>
-            <div class="quote-citation">             
-                ways that protect the potential of generations to come.
+      <!-- Sustainability Strategy Section -->
+      <section class="sustainability-strategy-section py-5">
+        <div class="container px-4 py-4 py-md-5">
+          <div class="row">
+            <div class="col-12 text-black">
+              <h2 class="section-title mb-4">Sustainability Strategy</h2>
+              <div class="section-subtitle mw-1000">
+                Fellowes' sustainability efforts are anchored by the strategic drivers and overarching goals which will govern our actions for years to come.
+              </div>
             </div>
           </div>
+          <div class="strategy-card-row row">
+            <div class="col-12 col-md-6 col-lg-3">
+              <h3 class="sustain-subheader color-dkgreen mb-4">Strategic<br>Drivers</h3>
+              <div class="sustain-desc">
+                Fellowes has identified three key drivers for identifying and prioritizing our sustainability strategy, goals, and efforts:
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="strategy-card strategy-card-green">
+                <img src="./img/wgu-earth/icon-gavel.svg" alt="icon/decorative" class="strategy-card-icon">
+                <div class="strategy-card-content">
+                  <h4 class="strategy-card-title mb-4">Comply with<br>Legislation</h4>
+                  <div class="strategy-card-desc">Commit to meeting all local, regional, and national ESG mandates</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="strategy-card strategy-card-green">
+                <img src="./img/wgu-earth/icon-align.svg" alt="icon/decorative" class="strategy-card-icon">
+                <div class="strategy-card-content">
+                  <h4 class="strategy-card-title mb-4">Align with<br>Customer Expectations</h4>
+                  <div class="strategy-card-desc">Prioritize our customers' and end consumers' sustainability focuses</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="strategy-card strategy-card-green">
+                <img src="./img/wgu-earth/icon-graph.svg" alt="icon/decorative" class="strategy-card-icon">
+                <div class="strategy-card-content">
+                  <h4 class="strategy-card-title mb-4">Achieve Tangible<br>Positive Impacts</h4>
+                  <div class="strategy-card-desc">Emphasize doing what is right, for Planet and People, in a direct and measurable way</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="strategy-card-row row">
+            <div class="col-12 col-md-6 col-lg-3">
+              <h3 class="sustain-subheader color-ltgreen mb-4">Overarching Sustainability Goals</h3>
+              <div class="sustain-desc">
+                Fellowes has identified three key drivers for identifying and prioritizing our sustainability strategy, goals, and efforts:
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="strategy-card strategy-card-ltgreen">
+                <img src="./img/wgu-earth/icon-minimize.svg" alt="icon/decorative" class="strategy-card-icon">
+                <div class="strategy-card-content">
+                  <h4 class="strategy-card-title mb-0">Minimize<br>Waste to Landfill</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="strategy-card strategy-card-ltgreen">
+                <img src="./img/wgu-earth/icon-data.svg" alt="icon/decorative" class="strategy-card-icon">
+                <div class="strategy-card-content">
+                  <h4 class="strategy-card-title mb-0">Enhance<br>Transparency<br>via Data</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="strategy-card strategy-card-ltgreen">
+                <img src="./img/wgu-earth/icon-energy.svg" alt="icon/decorative" class="strategy-card-icon">
+                <div class="strategy-card-content">
+                  <h4 class="strategy-card-title mb-0">Reduce Energy &<br>Carbon Emissions</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
-      <!-- Where we are going section -->
-      <section class="mb-1 position-relative">
-          <div class="where-going-text px-4 py-5 maxW-760" id="brochure">
-            <div class="py-5 text-center text-white d-flex flex-column justify-content-center h-100">
-                <h2 class="section-heading">
-                  <span class="d-block">Current Efforts & Future Commitments</span>
-                </h2>
-                <p class="section-body">
-                  At Fellowes, we hold lasting, company-wide commitments to creating a better future: one built on sustainable practices, ethical leadership, and care for people and planet alike. From circular product design and waste reduction to employee well-being and community impact, we're taking careful steps to put care at the heart of everything we do.
-                </p>
-                <a href="./img/wgu-earth/2025-Fellowes-Impact-Report.pdf" class="green-section-btn fds-company-green-bg text-white" target="blank">
-                  Download The <span class="break-word">2025 Impact Report</span>
-                </a>
+      <!-- Impact Report Section -->
+      <section class="impact-report-section py-5">
+        <div class="container px-4 py-4 py-md-5">
+          <div class="row mb-4">
+            <div class="col-12 text-white text-center">
+              <h2 class="section-title mb-4 text-wrap-balance">Explore Our Latest Impact Report</h2>
+              <div class="section-subtitle mw-1200 mx-auto">
+                A transparent look at how we're building on our legacy of care and commitment to what matters most. Discover the progress we've made, the actions we're taking to reduce our footprint and design smarter solutions, and the stories behind the people and innovations shaping a healthier, more sustainable future.
+              </div>
             </div>
           </div>
-          <img
-            src="./img/wgu-earth/where-we-going.jpg"
-            alt="winding road through green hills with wind turbine farm on the right"
-            class="where-going-img w-100 d-none d-md-block h-800"
-            />
-          <img
-            src="./img/wgu-earth/where-we-going-mobile.jpg"
-            alt="winding road through green hills with wind turbine farm on the right"
-            class="where-going-img w-100 d-block h-800 d-md-none"
-            />
+          <div class="row gy-4">
+            <div class="col-12 col-lg-6 order-3 order-lg-1 position-relative">
+              <img src="./img/wgu-earth/ImpactReport.png" alt="Image of the cover of the Impact Report" class="impact-report-img">
+            </div>
+            <div class="col-6 col-lg-3 order-1 order-lg-2">
+              <a href="#" class="report-link link-underlined text-white" target="_blank">Executive Summary</a>
+            </div>
+            <div class="col-6 col-lg-3 order-2 order-lg-3">
+              <a href="#" class="report-link link-underlined text-white" target="_blank">2026 Impact Report</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Awards Section -->
+      <section class="awards-section py-5">
+        <div class="container px-4 py-4 py-md-5">
+          <div class="row">
+            <div class="col-12">
+              <h2 class="section-title mb-4 ms-3">Awards</h2>
+
+              <div class="multi-carousel" data-mdb-multi-carousel-init data-mdb-interval="5000">
+                <div class="multi-carousel-inner">
+                  <div class="multi-carousel-item">
+                    <a href="https://recognition.ecovadis.com/W4T0ao-URky9MyJcTakuvA" target="_blank" class="award-card">
+                      <img src="./img/wgu-earth/awards/ecovadis-logo.svg" alt="EcoVadis Logo" class="award-card-logo">
+                      <h3 class="award-card-title">CSR 2026 Silver Medal</h3>
+                    </a>
+                  </div>
+                  <div class="multi-carousel-item">
+                    <a href="./img/wgu-earth/awards/fsc-certificate.pdf" target="_blank" class="award-card">
+                      <img src="./img/wgu-earth/awards/fsc-logo.png" alt="FSC Logo" class="award-card-logo">
+                      <h3 class="award-card-title">FSC Certificate</h3>
+                    </a>
+                  </div>
+                  <div class="multi-carousel-item">
+                    <a href="./img/wgu-earth/awards/sfi-chainofcustody.pdf" target="_blank" class="award-card">
+                      <img src="./img/wgu-earth/awards/sfi-logo.png" alt="SFI Logo" class="award-card-logo">
+                      <h3 class="award-card-title">SFI Certificate</h3>
+                    </a>
+                  </div>
+                  <div class="multi-carousel-item">
+                    <a href="./img/wgu-earth/awards/WELL-Silver-Certificate.pdf" target="_blank" class="award-card">
+                      <img src="./img/wgu-earth/awards/Well-silver-Logo.png" alt="Well Silver Logo" class="award-card-logo">
+                      <h3 class="award-card-title">Well Silver Certificate</h3>
+                    </a>
+                  </div>
+                </div>
+                <div class="slider-nav-wrapper">
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    tabindex="0"
+                    data-mdb-slide="prev"
+                  >
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    tabindex="0"
+                    data-mdb-slide="next"
+                  >
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       <!-- Sustainability with Substance Section -->
@@ -218,8 +338,8 @@
           <div class="container-fluid p-0 safeairstoriestabbox">
             <div class="row gx-0">
                 <div class="col-xl-4 light-blue-box tab-box text-black">
-                  <h2 class="mb-3 text-center text-xl-start text-uppercase tabs-side-title">
-                      Sustainability with substance
+                  <h2 class="section-title mb-3 text-center text-xl-start">
+                      Sustainability<br>with Substance
                   </h2>
                   <p class="tabs-side-desc text-center text-xl-start">
                       Earth by Fellowes has identified focus areas that yield the highest impact and
@@ -227,7 +347,7 @@
                   </p>
                   <!-- Tab navs -->
                   <div class="sas-tab-navs">
-                      <div class="tab-dropdown d-xl-none">Improved Efficiency</div>
+                      <div class="tab-dropdown d-xl-none">Renewable Energy</div>
                       <i class="fa-solid fa-chevron-down"></i>
                   </div>
                   <div
@@ -244,7 +364,7 @@
                         role="tab"
                         aria-controls="v-pills-improved-efficiency"
                         aria-selected="true"
-                        >Improved Efficiency</a
+                        >Renewable Energy</a
                         >
                       <a
                         class="nav-link tabboxlink"
@@ -264,7 +384,7 @@
                         role="tab"
                         aria-controls="v-pills-packaging"
                         aria-selected="false"
-                        >Next Generation Packaging</a
+                        >Sustainable Packaging</a
                         >
                       <a
                         class="nav-link tabboxlink"
@@ -284,7 +404,17 @@
                         role="tab"
                         aria-controls="v-pills-future"
                         aria-selected="false"
-                        >Designing For The Future</a
+                        >Carbon Action</a
+                        >
+                      <a
+                        class="nav-link tabboxlink"
+                        id="v-pills-biodiversity-tab"
+                        data-mdb-toggle="pill"
+                        href="#v-pills-biodiversity"
+                        role="tab"
+                        aria-controls="v-pills-biodiversity"
+                        aria-selected="false"
+                        >Biodiveristy</a
                         >
                   </div>
                   <!-- Tab navs -->
@@ -309,7 +439,7 @@
                             <div
                               class="logo-sontent-section sustain-tab-text py-xl-5 mw-635 text-center text-xl-start"
                               >
-                              Fellowes has prioritized and invested in sustainable energy sources throughout our facility network. In fact, there are 4 Fellowes locations across the globe where on-site solar arrays are present.
+                              Fellowes has prioritized and invested in sustainable energy sources throughout our facility network. Several Fellowes locations across the globe have on-site solar arrays present and, where not possible, renewable purchasing agreements. Check out the timeline below.
                             </div>
                         </div>
                       </div>
@@ -330,10 +460,7 @@
                             <div
                               class="logo-sontent-section sustain-tab-text py-xl-5 mw-635 text-center text-xl-start"
                               >
-                              Our material separation program in our headquarters in Itasca, IL ensures the
-                              disassembly and organization of all waste into material classifications for
-                              reuse or recycling purposes. The result of these efforts was over 90% of the
-                              contents from potential waste being diverted from landfill.
+                              Our facilities are targeting 95% landfill diversion by 2030 thanks to disassembly and organization of all waste into material classifications for reuse or recycling purposes. Our best-performing sites such as Itasca in the US and Doncaster in the UK are already over 90% landfill diversion, and their best-practices are being shared across the rest of sites.
                             </div>
                         </div>
                       </div>
@@ -396,18 +523,35 @@
                             <img
                               src="./img/wgu-earth/section-5-img-5.jpg"
                               class="img-fluid w-100"
-                              alt="Designing For The Future"
+                              alt="Carbon Action"
                               />
                         </div>
                         <div class="tab-logo-box px-4 py-5">
                             <div
                               class="logo-sontent-section sustain-tab-text py-xl-5 mw-635 text-center text-xl-start"
                               >
-                              As part of ongoing commitments to global environmental regulations, in 2022,
-                              Fellowes launched and integrated the Design for Environment (DfE) program into
-                              New Product Development processes, prioritizing the Indoor Air Quality and the
-                              BIFMA LEVEL 2 certifications. We are also committed to designing a variety of
-                              new products that can be disassembled and are 100% recyclables.
+                              Since 2020, Fellowes has been actively participating in the CDP, a global initiative that promotes transparency around greenhouse gas (GHG) emissions of large corporations. We measure and report Scope 1, scope 2 and scope 3 emissions and have a reduction target of 10% by 2030.
+                            </div>
+                        </div>
+                      </div>
+                      <div
+                        class="tab-pane fade"
+                        id="v-pills-biodiversity"
+                        role="tabpanel"
+                        aria-labelledby="v-pills-biodiversity-tab"
+                        >
+                        <div class="tab-img">
+                            <img
+                              src="./img/wgu-earth/section-5-img-6.jpg"
+                              class="img-fluid w-100"
+                              alt="Biodiveristy"
+                              />
+                        </div>
+                        <div class="tab-logo-box px-4 py-5">
+                            <div
+                              class="logo-sontent-section sustain-tab-text py-xl-5 mw-635 text-center text-xl-start"
+                              >
+                              Through the <a class="text-black text-decoration-underline" href="https://tree-nation.com/profile/impact/bankers-box" target="_blank">Plant a Tree Program</a>, BANKERS BOX® are planting trees to preserve of our planet's rich biodiversity and help offset our CO2 emissions. Since 2023 Fellowes has focused the restoration efforts on projects with verified carbon offsets (VCS).
                             </div>
                         </div>
                       </div>
@@ -418,200 +562,385 @@
           </div>
       </section>
 
-      <section id="pinContainer" class="mb-1 bg-white">
-          <div id="slideContainer">
-            <div class="panel measured-progress-section overflow-hidden">
-                <div class="panel-title text-white">Measured Progress</div>
-                <div class="panel-content">
-                  <div class="panel-icon">
-                      <img src="./img/wgu-earth/scroll-magic-icon-1.svg" alt="Sun Icon" />
-                  </div>
-                  <div class="panel-content-wrapper text-white">
-                      <div class="panel-stat">4,560 MWh</div>
-                      <div class="panel-desc">
-                        of energy has been produced by solar panels at Fellowes Headquarters since install in 2019
+      <!-- Timeline Section -->
+      <section class="timeline-section py-5 mb-5">
+        <div class="container px-4 py-4 py-md-5">
+          <div class="row">
+            <div class="col-12">
+              <h2 class="section-title mb-3 ms-3">Energy Conservation and Emission <span class="break-on-desktop">Reduction Projects Through the Years</span></h2>
+              <div class="section-subtitle mb-4 ms-3">
+                Timeline includes featured projects and is not comprehensive of all efforts.
+              </div>
+
+              <div class="multi-carousel timeline-multi-carousel" data-mdb-multi-carousel-init data-mdb-items="4" data-mdb-interval="5000">
+                <div class="multi-carousel-inner">
+                  <div class="multi-carousel-item px-3">
+                    <div style="--card-color: #5f7786;" class="timeline-card date-top-card">
+                      <div class="date-box">2011</div>
+                      <div class="date-box-carat">
+                        <?xml version="1.0" encoding="UTF-8"?>
+                        <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9.850002288819269 4.930000305176691">
+                          <defs>
+                            <style>
+                              .cls-1 {
+                                fill: var(--card-color);
+                              }
+                            </style>
+                          </defs>
+                          <polyline class="cls-1" points="0 0 4.930000305175781 4.930000305176691 9.850002288819269 0"/>
+                        </svg>                        
                       </div>
-                  </div>
-                </div>
-                <img
-                  src="./img/wgu-earth/scroll-magic-img-1.jpg"
-                  class="panel-img img-fluid w-100 d-none d-md-block object-bottom"
-                  />
-                <img
-                  src="./img/wgu-earth/scroll-magic-mobile-img-1.jpg"
-                  class="panel-img img-fluid w-100 d-md-none"
-                  />
-            </div>
-            <div class="panel tree-planted-section overflow-hidden">
-                <div class="panel-title text-white">Measured Progress</div>
-                <div class="panel-content">
-                  <div class="panel-icon">
-                      <img src="./img/wgu-earth/scroll-magic-icon-2.svg" alt="Sun Icon" />
-                  </div>
-                  <div class="panel-content-wrapper text-white">
-                      <div class="panel-stat">140k+</div>
-                      <div class="panel-desc">
-                        trees have been planted by the BANKERS BOX® business since 2021
-                        <a
-                            href="https://tree-nation.com/profile/impact/bankers-box"
-                            target="_blank"
-                            class="scroll-magic-link"
-                            >Keep Track Here</a
-                            >
+                      <div class="timeline-card-content">
+                        <h3 class="timeline-card-title">Leonardi<br>Warehouse</h3>
+                        <div class="timeline-card-divider"></div>
+                        <div class="timeline-card-desc">
+                          Onsite Solar<br>Installation
+                        </div>
                       </div>
+                    </div>
                   </div>
-                </div>
-                <img
-                  src="./img/wgu-earth/scroll-magic-img-2.jpg"
-                  class="panel-img img-fluid w-100 d-none d-md-block object-bottom"
-                  />
-                <img
-                  src="./img/wgu-earth/scroll-magic-mobile-img-2.jpg"
-                  class="panel-img img-fluid w-100 d-md-none"
-                  />
-            </div>
-            <div class="panel recycled-section overflow-hidden">
-                <div class="panel-title text-white">Measured Progress</div>
-                <div class="panel-content">
-                  <div class="panel-icon">
-                      <img src="./img/wgu-earth/scroll-magic-icon-3.svg" alt="Sun Icon" />
-                  </div>
-                  <div class="panel-content-wrapper text-white">
-                      <div class="panel-stat">100%</div>
-                      <div class="panel-desc">
-                        of packaging will be made with recyclable materials in 2028
+                  <div class="multi-carousel-item px-3">
+                    <div style="--card-color: #9bb6c8;" class="timeline-card date-bottom-card">
+                      <div class="timeline-card-content">
+                        <h3 class="timeline-card-title">Doncaster</h3>
+                        <div class="timeline-card-divider"></div>
+                        <div class="timeline-card-desc">
+                          LED Light<br>Installation
+                        </div>
                       </div>
-                  </div>
-                </div>
-                <img
-                  src="./img/wgu-earth/scroll-magic-img-3.jpg"
-                  class="panel-img img-fluid w-100 d-none d-md-block object-bottom"
-                  />
-                <img
-                  src="./img/wgu-earth/scroll-magic-mobile-img-3.jpg"
-                  class="panel-img img-fluid w-100 d-md-none"
-                  />
-            </div>
-            <div class="panel landfill-section overflow-hidden">
-                <div class="panel-title text-white">Measured Progress</div>
-                <div class="panel-content">
-                  <div class="panel-icon">
-                      <img src="./img/wgu-earth/scroll-magic-icon-4.svg" alt="Sun Icon" />
-                  </div>
-                  <div class="panel-content-wrapper text-white">
-                      <div class="panel-stat">95%</div>
-                      <div class="panel-desc">
-                        corporate waste diversion from landfill by 2030
+                      <div class="date-box-carat">
+                        <?xml version="1.0" encoding="UTF-8"?>
+                        <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9.850002288819269 4.930000305176691">
+                          <defs>
+                            <style>
+                              .cls-1 {
+                                fill: var(--card-color);
+                              }
+                            </style>
+                          </defs>
+                          <polyline class="cls-1" points="0 0 4.930000305175781 4.930000305176691 9.850002288819269 0"/>
+                        </svg>                        
                       </div>
+                      <div class="date-box">2016</div>
+                    </div>
+                  </div>
+                  <div class="multi-carousel-item px-3">
+                    <div style="--card-color: #b4cce3;" class="timeline-card date-top-card">
+                      <div class="date-box">2017</div>
+                      <div class="date-box-carat">
+                        <?xml version="1.0" encoding="UTF-8"?>
+                        <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9.850002288819269 4.930000305176691">
+                          <defs>
+                            <style>
+                              .cls-1 {
+                                fill: var(--card-color);
+                              }
+                            </style>
+                          </defs>
+                          <polyline class="cls-1" points="0 0 4.930000305175781 4.930000305176691 9.850002288819269 0"/>
+                        </svg>                        
+                      </div>
+                      <div class="timeline-card-content">
+                        <h3 class="timeline-card-title">Global<br>Headquarters</h3>
+                        <div class="timeline-card-divider"></div>
+                        <div class="timeline-card-desc">
+                          Building 1789<br>LED Light<br>Installation
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="multi-carousel-item px-3">
+                    <div style="--card-color: #495f52;" class="timeline-card date-bottom-card">
+                      <div class="timeline-card-content">
+                        <h3 class="timeline-card-title">Global<br>Headquarters</h3>
+                        <div class="timeline-card-divider"></div>
+                        <div class="timeline-card-desc">
+                          Building 1711<br>LED Light<br>Installation
+                        </div>
+                      </div>
+                      <div class="date-box-carat">
+                        <?xml version="1.0" encoding="UTF-8"?>
+                        <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9.850002288819269 4.930000305176691">
+                          <defs>
+                            <style>
+                              .cls-1 {
+                                fill: var(--card-color);
+                              }
+                            </style>
+                          </defs>
+                          <polyline class="cls-1" points="0 0 4.930000305175781 4.930000305176691 9.850002288819269 0"/>
+                        </svg>                        
+                      </div>
+                      <div class="date-box">2018</div>
+                    </div>
+                  </div>
+                  <div class="multi-carousel-item px-3">
+                    <div style="--card-color: #7f8f86;" class="timeline-card date-top-card">
+                      <div class="date-box">2019</div>
+                      <div class="date-box-carat">
+                        <?xml version="1.0" encoding="UTF-8"?>
+                        <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9.850002288819269 4.930000305176691">
+                          <defs>
+                            <style>
+                              .cls-1 {
+                                fill: var(--card-color);
+                              }
+                            </style>
+                          </defs>
+                          <polyline class="cls-1" points="0 0 4.930000305175781 4.930000305176691 9.850002288819269 0"/>
+                        </svg>                        
+                      </div>
+                      <div class="timeline-card-content">
+                        <h3 class="timeline-card-title">Global<br>Headquarters</h3>
+                        <div class="timeline-card-divider"></div>
+                        <div class="timeline-card-desc">
+                          Building 1789<br>1 MWH Onsite<br>Solar Installation
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="multi-carousel-item px-3">
+                    <div style="--card-color: #8ca17a;" class="timeline-card date-bottom-card">
+                      <div class="timeline-card-content">
+                        <h3 class="timeline-card-title">Tilburg,<br>The Netherlands</h3>
+                        <div class="timeline-card-divider"></div>
+                        <div class="timeline-card-desc">
+                          LED Light<br>Installation
+                        </div>
+                      </div>
+                      <div class="date-box-carat">
+                        <?xml version="1.0" encoding="UTF-8"?>
+                        <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9.850002288819269 4.930000305176691">
+                          <defs>
+                            <style>
+                              .cls-1 {
+                                fill: var(--card-color);
+                              }
+                            </style>
+                          </defs>
+                          <polyline class="cls-1" points="0 0 4.930000305175781 4.930000305176691 9.850002288819269 0"/>
+                        </svg>                        
+                      </div>
+                      <div class="date-box">2022</div>
+                    </div>
+                  </div>
+                  <div class="multi-carousel-item px-3">
+                    <div style="--card-color: #aebd97;" class="timeline-card date-top-card">
+                      <div class="date-box">2023</div>
+                      <div class="date-box-carat">
+                        <?xml version="1.0" encoding="UTF-8"?>
+                        <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9.850002288819269 4.930000305176691">
+                          <defs>
+                            <style>
+                              .cls-1 {
+                                fill: var(--card-color);
+                              }
+                            </style>
+                          </defs>
+                          <polyline class="cls-1" points="0 0 4.930000305175781 4.930000305176691 9.850002288819269 0"/>
+                        </svg>                        
+                      </div>
+                      <div class="timeline-card-content">
+                        <h3 class="timeline-card-title">Poland</h3>
+                        <div class="timeline-card-divider"></div>
+                        <div class="timeline-card-desc">
+                          Onsite Solar<br>Installation
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="multi-carousel-item px-3">
+                    <div style="--card-color: #aebd97;" class="timeline-card date-bottom-card">
+                      <div class="timeline-card-content">
+                        <h3 class="timeline-card-title">China</h3>
+                        <div class="timeline-card-divider"></div>
+                        <div class="timeline-card-desc">
+                          Onsite Solar<br>Partnership
+                        </div>
+                      </div>
+                      <div class="date-box-carat">
+                        <?xml version="1.0" encoding="UTF-8"?>
+                        <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9.850002288819269 4.930000305176691">
+                          <defs>
+                            <style>
+                              .cls-1 {
+                                fill: var(--card-color);
+                              }
+                            </style>
+                          </defs>
+                          <polyline class="cls-1" points="0 0 4.930000305175781 4.930000305176691 9.850002288819269 0"/>
+                        </svg>                        
+                      </div>
+                      <div class="date-box">2023</div>
+                    </div>
+                  </div>
+                  <div class="multi-carousel-item px-3">
+                    <div style="--card-color: #aebd97;" class="timeline-card date-top-card">
+                      <div class="date-box">2023</div>
+                      <div class="date-box-carat">
+                        <?xml version="1.0" encoding="UTF-8"?>
+                        <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9.850002288819269 4.930000305176691">
+                          <defs>
+                            <style>
+                              .cls-1 {
+                                fill: var(--card-color);
+                              }
+                            </style>
+                          </defs>
+                          <polyline class="cls-1" points="0 0 4.930000305175781 4.930000305176691 9.850002288819269 0"/>
+                        </svg>                        
+                      </div>
+                      <div class="timeline-card-content">
+                        <h3 class="timeline-card-title">Leonardi<br>Warehouse</h3>
+                        <div class="timeline-card-divider"></div>
+                        <div class="timeline-card-desc">
+                          LED Light<br>Installation
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="multi-carousel-item px-3">
+                    <div style="--card-color: #aebd97;" class="timeline-card date-bottom-card">
+                      <div class="timeline-card-content">
+                        <h3 class="timeline-card-title">Austrailia</h3>
+                        <div class="timeline-card-divider"></div>
+                        <div class="timeline-card-desc">
+                          Melbourne Airport<br>GreenPower Network
+                        </div>
+                      </div>
+                      <div class="date-box-carat">
+                        <?xml version="1.0" encoding="UTF-8"?>
+                        <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9.850002288819269 4.930000305176691">
+                          <defs>
+                            <style>
+                              .cls-1 {
+                                fill: var(--card-color);
+                              }
+                            </style>
+                          </defs>
+                          <polyline class="cls-1" points="0 0 4.930000305175781 4.930000305176691 9.850002288819269 0"/>
+                        </svg>                        
+                      </div>
+                      <div class="date-box">2023</div>
+                    </div>
+                  </div>
+                  <div class="multi-carousel-item px-3">
+                    <div style="--card-color: #8f8986;" class="timeline-card date-top-card">
+                      <div class="date-box">2024</div>
+                      <div class="date-box-carat">
+                        <?xml version="1.0" encoding="UTF-8"?>
+                        <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9.850002288819269 4.930000305176691">
+                          <defs>
+                            <style>
+                              .cls-1 {
+                                fill: var(--card-color);
+                              }
+                            </style>
+                          </defs>
+                          <polyline class="cls-1" points="0 0 4.930000305175781 4.930000305176691 9.850002288819269 0"/>
+                        </svg>                        
+                      </div>
+                      <div class="timeline-card-content">
+                        <h3 class="timeline-card-title">Poland</h3>
+                        <div class="timeline-card-divider"></div>
+                        <div class="timeline-card-desc">
+                          Heat Pump<br>Installation
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="multi-carousel-item px-3">
+                    <div style="--card-color: #c7c4c2;" class="timeline-card date-bottom-card">
+                      <div class="timeline-card-content">
+                        <h3 class="timeline-card-title">France</h3>
+                        <div class="timeline-card-divider"></div>
+                        <div class="timeline-card-desc">
+                          LED Light<br>Installation
+                        </div>
+                      </div>
+                      <div class="date-box-carat">
+                        <?xml version="1.0" encoding="UTF-8"?>
+                        <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9.850002288819269 4.930000305176691">
+                          <defs>
+                            <style>
+                              .cls-1 {
+                                fill: var(--card-color);
+                              }
+                            </style>
+                          </defs>
+                          <polyline class="cls-1" points="0 0 4.930000305175781 4.930000305176691 9.850002288819269 0"/>
+                        </svg>                        
+                      </div>
+                      <div class="date-box">2025</div>
+                    </div>
+                  </div>
+                  <div class="multi-carousel-item px-3">
+                    <div style="--card-color: #c7c4c2;" class="timeline-card date-top-card">
+                      <div class="date-box">2025</div>
+                      <div class="date-box-carat">
+                        <?xml version="1.0" encoding="UTF-8"?>
+                        <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9.850002288819269 4.930000305176691">
+                          <defs>
+                            <style>
+                              .cls-1 {
+                                fill: var(--card-color);
+                              }
+                            </style>
+                          </defs>
+                          <polyline class="cls-1" points="0 0 4.930000305175781 4.930000305176691 9.850002288819269 0"/>
+                        </svg>                        
+                      </div>
+                      <div class="timeline-card-content">
+                        <h3 class="timeline-card-title">POSTURITE (UK)</h3>
+                        <div class="timeline-card-divider"></div>
+                        <div class="timeline-card-desc">
+                          Onsite Solar<br>Installation
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <img
-                  src="./img/wgu-earth/scroll-magic-img-4.jpg"
-                  class="panel-img img-fluid w-100 d-none d-md-block object-bottom"
-                  />
-                <img
-                  src="./img/wgu-earth/scroll-magic-mobile-img-4.jpg"
-                  class="panel-img img-fluid w-100 d-md-none"
-                  />
-            </div>
-            <div class="panel bifma-section overflow-hidden">
-                <div class="panel-title text-dark">Measured Progress</div>
-                <div class="panel-content">
-                  <div class="panel-icon">
-                      <img src="./img/wgu-earth/scroll-magic-icon-5.svg" alt="Sun Icon" />
-                  </div>
-                  <div class="panel-content-wrapper text-white">
-                      <div class="panel-stat">51</div>
-                      <div class="panel-desc">LEVEL® 2<br /> Products</div>
-                  </div>
+                <div class="slider-nav-wrapper">
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    tabindex="0"
+                    data-mdb-slide="prev"
+                  >
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    tabindex="0"
+                    data-mdb-slide="next"
+                  >
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  </button>
                 </div>
-                <img
-                  src="./img/wgu-earth/scroll-magic-img-5.jpg"
-                  class="panel-img img-fluid w-100 d-none d-md-block object-bottom"
-                  />
-                <img
-                  src="./img/wgu-earth/scroll-magic-mobile-img-5.jpg"
-                  class="panel-img img-fluid w-100 d-md-none"
-                  />
-            </div>
-            <div class="panel advantage-gold-section overflow-hidden">
-                <div class="panel-title text-dark">Measured Progress</div>
-                <div class="panel-content">
-                  <div class="panel-icon">
-                      <img src="./img/wgu-earth/scroll-magic-icon-6.svg" alt="Sun Icon" />
-                  </div>
-                  <div class="panel-content-wrapper text-white">
-                      <div class="panel-stat">133</div>
-                      <div class="panel-desc">Indoor Advantage<br />Gold Products</div>
-                  </div>
-                </div>
-                <img
-                  src="./img/wgu-earth/scroll-magic-img-6.jpg"
-                  class="panel-img img-fluid w-100 d-none d-md-block object-bottom"
-                  />
-                <img
-                  src="./img/wgu-earth/scroll-magic-mobile-img-6.jpg"
-                  class="panel-img img-fluid w-100 d-md-none"
-                  />
+              </div>
             </div>
           </div>
+        </div>
       </section>
 
-      <!-- Built Better Section -->
-      <section class="mb-1">
-          <img
-            class="w-100 d-none d-md-block"
-            src="./img/wgu-earth/section-7-img-desktop.jpg"
-            alt="Image of an interior office space"
-            />
-          <img
-            class="w-100 d-block d-md-none"
-            src="./img/wgu-earth/section-7-img-mobile.jpg"
-            alt="Image of an interior office space"
-            />
-          <div class="built-better-content">
-            <div class="container px-4 py-5">
-                <div class="row py-md-4 align-items-center">
-                  <div class="col-md">
-                      <h2 class="built-better-title">Designed differently, Built Better</h2>
-                      <p class="built-better-desc">
-                        As part of ongoing commitments to global environmental regulations, in 2022,
-                        Fellowes launched and integrated the Design for Environment (DfE) program into New
-                        Product Development processes, prioritizing the Indoor Air Quality and the BIFMA
-                        LEVEL 2 certifications. We are also committed to designing a variety of new
-                        products that can be disassembled and are 100% recyclable.
-                      </p>
-                      <p class="built-better-desc">The ANSI/BIFMA e3 Furniture Sustainability Standard is a comprehensive, 
-                        multi-attribute standard for sustainability in the office furniture industry. 
-                        The standard provides direction to manufacturers in the areas of materials, energy 
-                        and atmosphere, human and ecosystem health, and corporate social responsibility. Third 
-                        party certification (called LEVEL) is based on an audit of the corporation, the manufacturing 
-                        site, and the specific products. Fellowes Brand's products are LEVEL 1 & 2 and can contribute to LEED and WELL projects.
-                      </p>
-                      Fellowes Brands used the following methods for its product grouping approach for LEVEL certification:
-                      <ul>
-                        <li>The combination of base product and options with the highest volume of sales or anticipated highest 
-                            volume for a new product within the product category / subcategories as defined in Annex A. It is not 
-                            necessary to consider the full range of options available on the representative sample for purposes 
-                            of the evaluation. Notwithstanding all products of a family group are expected to meet the intent of the credits.
-                        </li>
-                        <li>Worst-case sample selection as defined in the BIFMA LEVEL Standard (v 2019 ) - Section 4.</li>
-                      </ul>
-                  </div>
-                </div>
+      <!-- Design for Environment Section -->
+      <section class="design-section">
+        <div class="mw-1600 mx-auto px-4">
+          <div class="row align-items-center g-5">
+            <div class="col-12 col-lg-7 mt-0 pb-4 pb-lg-0 order-2 order-lg-1">
+              <img src="./img/wgu-earth/DesignedForTheEnvironment-Infographic.png" alt="a graphic displaying the stages of design" class="design-enviro-img">
+            </div>
+            <div class="col-12 col-lg-5 order-1 order-lg-2">
+              <h2 class="section-title mb-4">Design for the<br>Environment</h2>
+              <div class="section-subtitle">
+                Our Design for the Environment approach guides how we create smarter, more responsible products with their full lifecycle in mind. By applying circular design principles—from how products are made and used to how they are reused or recycled—we reduce impact and design for the future. These principles are embedded across our portfolio and shape every solution we create.
+              </div>
             </div>
           </div>
+        </div>
       </section>
 
-      <!-- Green Section -->
-      <section class="fds-green-bg d-flex flex-column justify-content-center align-items-center text-white mb-1 px-4 py-5 text-center">
-          <h2 class="learn-more-title pt-4">
-            Ready to learn more about Fellowes' Sustainability efforts?
-          </h2>
-          <a href="./img/wgu-earth/Earth-Report_2025.pdf" class="green-section-btn bg-white text-fds-green mb-4" target="blank"
-            >Download The <span class="break-word">2025 Impact Report</span>
-          </a>
-      </section>
     </main>
     <!-- End Project Here -->
 
@@ -701,11 +1030,6 @@
     <script type="text/javascript" src="./js/core.js"></script>
     <script type="text/javascript" src="./js/nav.js"></script>
     <!-- Custom Scripts -->
-    <script type="text/javascript" src="./js/gsap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
-    <script type="text/javascript" src="./js/animation.gsap.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js"></script>
     <script type="text/javascript" src="./js/wgu-earth.js"></script>
-    <script type="text/javascript" src="./js/wgu-earth-scrollmagic.js"></script>
   </body>
 </html>
