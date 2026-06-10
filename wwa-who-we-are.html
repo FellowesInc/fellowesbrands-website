@@ -21,8 +21,7 @@
     <link rel="stylesheet" href="./css/core.css" />
     <link rel="stylesheet" href="./css/nav.css" />
     <!-- Custom Styles -->
-    <link rel="stylesheet" href="./css/company-pages.css" />
-    <link rel="stylesheet" href="./css/company.css" />
+    <link rel="stylesheet" href="./css/wwa-who-we-are.css" />
   </head>
 
   <body style="position: relative">
@@ -44,14 +43,13 @@
             aria-controls="fullscreen-nav"
             aria-label="Toggle menu"
           >
-            <span></span>
-            <span></span>
-            <span></span>
+            <span class="nav-toggle-label site-header-nav-toggle-label" aria-hidden="true">Menu</span>
+            <span class="nav-toggle-icon" aria-hidden="true">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
           </button>
-
-          <div class="site-lang" >
-            <img src="./img/flag-us.svg" alt="English">
-          </div>
         </div>
       </div>
     </header>
@@ -73,14 +71,13 @@
               aria-controls="fullscreen-nav"
               aria-label="Close menu"
             >
+            <span class="nav-toggle-label" aria-hidden="false">Menu</span>
+            <span class="nav-toggle-icon" aria-hidden="false">
               <span></span>
               <span></span>
               <span></span>
+            </span>
             </button>
-
-            <div class="site-lang site-lang--nav">
-              <img src="./img/flag-us.svg" alt="English">
-            </div>
           </div>
         </div>
 
@@ -118,10 +115,10 @@
               </button>
               <ul class="nav-submenu">
                 <li><a href="#">Our Solutions</a></li>
-                <li><a href="#">Business Products</a></li>
-                <li><a href="#">Air Quality Management</a></li>
-                <li><a href="#">Contract Furnishings</a></li>
-                <li><a href="#">Architectural Solutions</a></li>
+                <li><a href="https://www.fellowes.com/us/en/catalog/business-products" target="_blank">Business Products</a></li>
+                <li><a href="https://www.fellowes.com/us/en/catalog/air-quality-management" target="_blank">Air Quality Management</a></li>
+                <li><a href="https://www.fellowes.com/us/en/catalog/contract-interiors" target="_blank">Contract Furnishings</a></li>
+                <li><a href="https://www.fellowes.com/us/en/catalog/architectural-solutions" target="_blank">Architectural Solutions</a></li>
               </ul>
             </li>
 
@@ -142,10 +139,10 @@
                 Careers
               </button>
               <ul class="nav-submenu">
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">Search Jobs</a></li>
-                <li><a href="#">Why Fellowes</a></li>
-                <li><a href="#">Candidate Portal</a></li>
+                <li><a href="https://careers.fellowes.com/" target="_blank">Careers</a></li>
+                <li><a href="https://careers.fellowes.com/search/jobs" target="_blank">Search Jobs</a></li>
+                <li><a href="https://careers.fellowes.com/pages/why-fellowes" target="_blank">Why Fellowes</a></li>
+                <li><a href="https://careers.fellowes.com/myportal?locale=en" target="_blank">Candidate Portal</a></li>
               </ul>
             </li>
           </ul>
@@ -157,143 +154,161 @@
     <!-- Start Project Here -->
     <main id="primary-content" class="position-relative">
 
-    <section class="band position-relative dark-img-overlay company-values-banner">
-        <img src="./img/wwa-who-we-are/header-img.jpg" class="img-fluid w-100 d-none d-md-block" />
-        <img src="./img/wwa-who-we-are/header-img-mobile.jpg" class="img-fluid w-100 d-block d-md-none" />
-        <div class="header-banner-text">
-          <h1 class="banner-text__header">Who We Are</h1>
+    <!-- Hero Banner -->
+    <section class="position-relative dark-img-overlay header-banner mb-2">
+      <img src="./img/wwa-who-we-are/header-img.jpg" class="img-fluid w-100 d-none d-md-block" />
+      <img src="./img/wwa-who-we-are/header-img-mobile.jpg" class="img-fluid w-100 d-block d-md-none" />
+      <div class="header-banner-text">
+        <h1 class="banner-text__header">Making WorkLife Better</h1>
+        <div class="banner-text__subtitle">
+          We design products, systems, and environments that support your biggest ambitions today, while constantly exploring how to help you reach even higher tomorrow.
         </div>
+      </div>
     </section>
 
-    <section class="band py-2 bg-white">
-        <div class="container py-md-2">
-        <!--<div class="overview-text text-black text-center pb-md-5"> Founded on a culture of continuous improvement, Fellowes strives to deliver best-in-class quality products. With a commitment to <strong>Unleashing WorkLife Potential</strong>, Fellowes introduces new ideas that evolve to meet the needs of an ever-changing world. </div> -->
-        </div>
-    </section>
-
-    <section class="band text-overlap-img-section mb-2 mb-lg-5 mb-xxl-0 py-4">
-        <div class="container">
-          <div class="row gx-0 isolation-isolate justify-content-center">
-              <div class="content-block col-12 col-lg-6 col-xl-5 order-2 order-lg-1">
-                <div class="tois-content-wrapper">
-                    <h3 class="tois-content-title">Global Leadership</h3>
-                    <p class="tois-content-desc">
-                      For over a century, Fellowes has evolved alongside WorkLife itself - creating the tools, systems, and environments that put you back at the center of your work.
-                    </p>
-                    <div class="position-relative mt-4 text-center text-lg-start">
-                      <a href="./wwa-global-leadership.html" class="link-underlined text-black left-underline">Explore</a>
-                    </div>
-                </div>
-              </div>
-              <div class="image-block col-12 col-lg-6 col-xl-7 order-1 order-lg-2">
-                <img
-                    src="./img/wwa-who-we-are/globalleadership-img.jpg"
-                    alt="sitting man talking with standing woman in her office"
-                    class="d-block w-100"
-                    />
-              </div>
+    <!-- History Section -->
+    <section class="history-section pt-5 pb-lg-5 position-relative mb-2">
+      <div class="container px-4 pt-4 py-lg-5">
+        <div class="row">
+          <div class="col-12 col-lg-9 text-white">
+            <h2 class="section-title mb-5">From Storage to Spaces. Tailored for WorkLife.</h2>
+            <div class="section-desc mb-3">
+              Harry Fellowes was a tailor by trade. But after a chance meeting with a young entrepreneur, Harry saw an opportunity to create a revolutionary new product for the booming financial industry of the early 20th century. Using a modular document storage system, Harry helped banks design customized record-keeping solutions that reflected how their team worked.
+            </div>
+            <div class="section-desc mb-3">
+              Through a relatively simple product and uncommon understanding of customer challenges, Harry helped transform bankers' workplaces with new productivity and ease.
+            </div>
+            <div class="section-desc mb-5">
+              “Know your customer's needs. Be embedded in their challenges. Design from that place." That wasn't a mission statement written later. It was how Harry operated. And it became the governing principle that has shaped every decision Fellowes has made since.
+            </div>
+            <div class="d-none d-lg-block">
+              <a class="btn-primary btn-white d-inline-block me-4" href="#">Learn More About Our Family Heritage</a>
+              <a class="btn-primary btn-white icon-btn d-inline-block" href="#"><img src="./img/play-btn-icon.svg" alt="decorative/play button" class="btn-icon"> Our Story</a>
+            </div>
           </div>
         </div>
-    </section>
-
-    <section class="band text-overlap-img-section mb-2 mb-lg-5 mb-xxl-0 py-4">
-        <div class="container">
-          <div class="row gx-0 isolation-isolate justify-content-center">
-              <div class="content-block col-12 col-lg-6 col-xl-5 order-2 order-lg-1">
-                <div class="tois-content-wrapper">
-                    <h3 class="tois-content-title">Family Heritage</h3>
-                    <p class="tois-content-desc">
-                      Since 1917, the Fellowes family has brought entrepreneurial leadership to its family business.
-                    </p>
-                    <div class="position-relative mt-4 text-center text-lg-start">
-                      <a href="./wwa-family-heritage.html" class="link-underlined text-black left-underline">Explore</a>
-                    </div>
-                </div>
+      </div>
+      <div class="d-lg-none">
+        <div class="container px-4">
+          <div class="row">
+            <div class="col-12 position-relative">
+              <div class="btn-wrapper position-absolute pt-4">
+                <a class="btn-primary btn-white mb-4" href="#">Our Family Heritage</a>
+                <a class="btn-primary btn-white icon-btn" href="#"><img src="./img/play-btn-icon.svg" alt="decorative/play button" class="btn-icon"> Our Story</a>
               </div>
-              <div class="image-block col-12 col-lg-6 col-xl-7 order-1 order-lg-2">
-                <img
-                    src="./img/wwa-who-we-are/familyheritage-img.jpg"
-                    alt="three men standing over a prototype discussing something"
-                    class="d-block w-100"
-                    />
-              </div>
+            </div>
           </div>
         </div>
+        <img src="./img/wwa-who-we-are/Harry-With-Text.png" alt="Image of Harry Fellowes, founder of Fellowes and Bankers Box" class="harry-fellowes-img">
+      </div>
+      <img src="./img/wwa-who-we-are/Harry-With-Text.png" alt="Image of Harry Fellowes, founder of Fellowes and Bankers Box" class="harry-fellowes-img d-none d-lg-block">
     </section>
 
-    <section class="band text-overlap-img-section mb-2 mb-lg-5 mb-xxl-0 py-4">
-        <div class="container">
-          <div class="row gx-0 isolation-isolate justify-content-center">
-              <div class="content-block col-12 col-lg-6 col-xl-5 order-2 order-lg-1">
-                <div class="tois-content-wrapper">
-                    <h3 class="tois-content-title">Awards & Recognition</h3>
-                    <p class="tois-content-desc">
-                      Putting our core principles of world-class innovation, exceptional product quality, and attentive customer service into action has brought Fellowes recognition from many global organizations.
-                    </p>
-                    <div class="position-relative mt-4 text-center text-lg-start">
-                      <a href="./wwa-awards-recognition.html"  class="link-underlined text-black left-underline">Explore</a>
-                    </div>
-                </div>
-              </div>
-              <div class="image-block col-12 col-lg-6 col-xl-7 order-1 order-lg-2">
-                <img
-                    src="./img/wwa-who-we-are/awards-img.jpg"
-                    alt="Out-stretched hands holding a globe of the Earth"
-                    class="d-block w-100"
-                    />
-              </div>
+    <!-- One Fellowes Section -->
+    <section class="one-fellowes-section py-5 mb-2">
+      <div class="container px-3 px-lg-4 py-4 py-lg-5">
+        <div class="row mb-4">
+          <div class="col-12 text-center mb-4 mb-lg-5">
+            <h2 class="section-title mb-4 mb-lg-5"><span class="break-word">One Fellowes:</span> Solutions that Work Together</h2>
+            <div class="section-desc mw-1140 mx-auto">
+              Bringing together Contract Furnishings, Architectural Solutions, Air Quality Management, and Business Products to create tailored solutions that Make WorkLife Better.
+            </div>
           </div>
         </div>
+        <div class="row">
+          <div class="col-12 solutions-card-grid">
+            <a href="#" class="solutions-card">
+              <img src="./img/wwa-who-we-are/one-section-cf.jpg" alt="Image of Markerboards in an Art Class" class="solutions-card-img">
+              <div class="btn-primary btn-white solutions-card-btn">Contract Furnishings</div>
+            </a>
+            <a href="#" class="solutions-card">
+              <img src="./img/wwa-who-we-are/one-section-as.jpg" alt="Image of an office made of Titan Walls" class="solutions-card-img">
+              <div class="btn-primary btn-white solutions-card-btn">Architectural Solutions</div>
+            </a>
+            <a href="#" class="solutions-card">
+              <img src="./img/wwa-who-we-are/one-section-aqm.jpg" alt="Image of an Array Ceiling Device hanging in an office area" class="solutions-card-img">
+              <div class="btn-primary btn-white solutions-card-btn">Contract Furnishings</div>
+            </a>
+            <a href="#" class="solutions-card">
+              <img src="./img/wwa-who-we-are/one-section-bp.jpg" alt="Image of multiple Fellowes Business Products including Monitor Arms, Foot Rest, and Seating" class="solutions-card-img">
+              <div class="btn-primary btn-white solutions-card-btn">Contract Furnishings</div>
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="band text-overlap-img-section mb-2 mb-lg-5 mb-xxl-0 py-4">
-        <div class="container">
-          <div class="row gx-0 isolation-isolate justify-content-center">
-              <div class="content-block col-12 col-lg-6 col-xl-5 order-2 order-lg-1">
-                <div class="tois-content-wrapper">
-                    <h3 class="tois-content-title">Newsroom</h3>
-                    <p class="tois-content-desc">
-                      Stay up to date with the latest news and articles about Fellowes newest products and innovations.
-                    </p>
-                    <div class="position-relative mt-4 text-center text-lg-start">
-                      <a href="#"  class="link-underlined text-black left-underline">Explore</a>
-                    </div>
-                </div>
-              </div>
-              <div class="image-block col-12 col-lg-6 col-xl-7 order-1 order-lg-2">
-                <img
-                    src="./img/wwa-who-we-are/newsroom-img.jpg"
-                    alt="Image of the lobby of one of Fellowes Offices"
-                    class="d-block w-100"
-                    />
-              </div>
-          </div>
+    <!-- Careers Section -->
+    <section class="careers-section floating-text-section position-relative mb-2">
+      <img src="./img/wwa-who-we-are/section-careers-desktop.jpg" alt="Image of people sitting in a lobby area of the Fellowes office building" class="floating-text-section-img d-none d-lg-block">
+      <img src="./img/wwa-who-we-are/section-careers-mobile.jpg" alt="Image of people sitting in a lobby area of the Fellowes office building" class="floating-text-section-img d-block d-lg-none">
+      <div class="floating-text-wrapper">
+        <h2 class="section-title mb-4 mb-lg-4-5">Join the Fellowes Family</h2>
+        <div class="section-desc mb-4 mb-lg-4-5">
+          Where your work—and the people around you—matter. Explore opportunities to become part of a family-owned legacy focused on creating better experiences for people and the places they work.
         </div>
+        <a href="#" class="btn-primary btn-black mx-auto mx-lg-0">Explore Careers</a>
+      </div>
     </section>
 
-    <section class="band text-overlap-img-section mb-3 mb-lg-5 mb-xxl-0 py-4">
-        <div class="container">
-          <div class="row gx-0 isolation-isolate justify-content-center">
-              <div class="content-block col-12 col-lg-6 col-xl-5 order-2 order-lg-1">
-                <div class="tois-content-wrapper">
-                    <h3 class="tois-content-title">Quarter Century Club</h3>
-                    <p class="tois-content-desc">
-                      Welcome to a tribute dedicated to the heart and soul of our organization – our devoted employees who have journeyed with us for a remarkable 25 years or more.
-                    </p>
-                    <div class="position-relative mt-4 text-center text-lg-start">
-                      <a href="./wwa-qc-club.html"  class="link-underlined text-black left-underline">Explore</a>
-                    </div>
-                </div>
-              </div>
-              <div class="image-block col-12 col-lg-6 col-xl-7 order-1 order-lg-2">
-                <img
-                    src="./img/wwa-who-we-are/QCC-img.jpg"
-                    alt="Image of the lobby of one of Fellowes Offices"
-                    class="d-block w-100"
-                    />
-              </div>
+    <!-- Tiles Section -->
+    <section class="tiles-section mb-2">
+      <div class="tiles-grid">
+        <div class="tile-card">
+          <img src="./img/wwa-who-we-are/tile-leadership.jpg" alt="Image of the Fellowes Brand logo on a glass wall" class="tile-card-img w-100 d-block">
+          <div class="tile-card-content">
+            <h2 class="section-title mb-4 mb-lg-4-5">Global Leadership</h2>
+            <div class="section-desc mb-4 mb-lg-4-5 mw-700 mx-auto">
+              For over a century, Fellowes has evolved alongside WorkLife itself - creating the tools, systems, and environments that put you back at the center of your work.
+            </div>
+            <a href="#" class="btn-primary btn-black mx-auto">Explore Leadership</a>
           </div>
         </div>
+        <div class="tile-card">
+          <img src="./img/wwa-who-we-are/tile-qcc.jpg" alt="Image of multiple Fellowes Employees with the words Celebrating 25 Years on top" class="tile-card-img w-100 d-block">
+          <div class="tile-card-content">
+            <h2 class="section-title mb-4 mb-lg-4-5">Quarter Century Club</h2>
+            <div class="section-desc mb-4 mb-lg-4-5">
+              Welcome to a tribute dedicated to the heart and soul of our organization - our devoted employees who have journeyed with us for a remarkable 25 years or more.
+            </div>
+            <a href="#" class="btn-primary btn-black mx-auto">Explore Employees</a>
+          </div>
+        </div>
+        <div class="tile-card">
+          <img src="./img/wwa-who-we-are/tile-locations.jpg" alt="Image of the World Map" class="tile-card-img w-100 d-block">
+          <div class="tile-card-content">
+            <h2 class="section-title mb-4 mb-lg-4-5">Locations</h2>
+            <div class="section-desc mb-4 mb-lg-4-5">
+              With 23 locations across the U.S. and around the world, Fellowes Brands delivers innovative solutions that support people, organizations, and workplaces everywhere.
+            </div>
+            <a href="#" class="btn-primary btn-black mx-auto">Explore Locations</a>
+          </div>
+        </div>
+        <div class="tile-card">
+          <img src="./img/wwa-who-we-are/tile-newsroom.jpg" alt="Image of a broadcasting camera at a news event" class="tile-card-img w-100 d-block">
+          <div class="tile-card-content">
+            <h2 class="section-title mb-4 mb-lg-4-5">Newsroom</h2>
+            <div class="section-desc mb-4 mb-lg-4-5">
+              Stay up to date with the latest company news, press releases, product innovations, awards, and stories shaping the future of A Better WorkLife.
+            </div>
+            <a href="#" class="btn-primary btn-black mx-auto">Explore News</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Awards Section -->
+    <section class="awards-section floating-text-section position-relative mb-2">
+      <img src="./img/wwa-who-we-are/section-awards-desktop.jpg" alt="Image of an award sitting on a desk" class="floating-text-section-img d-none d-lg-block">
+      <img src="./img/wwa-who-we-are/section-awards-mobile.jpg" alt="Image of an award sitting on a desk" class="floating-text-section-img d-block d-lg-none">
+      <div class="floating-text-wrapper">
+        <h2 class="section-title mb-4 mb-lg-4-5">Awards & Recognition</h2>
+        <div class="section-desc mb-4 mb-lg-4-5">
+          Putting our core principles of world-class innovation, exceptional product quality, and attentive customer service into action has brought Fellowes recognition from many global organizations.
+        </div>
+        <a href="#" class="btn-primary btn-black mx-auto mx-lg-0">Explore Awards</a>
+      </div>
     </section>
 
     </main>
