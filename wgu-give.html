@@ -44,14 +44,13 @@
             aria-controls="fullscreen-nav"
             aria-label="Toggle menu"
           >
-            <span></span>
-            <span></span>
-            <span></span>
+            <span class="nav-toggle-label site-header-nav-toggle-label" aria-hidden="true">Menu</span>
+            <span class="nav-toggle-icon" aria-hidden="true">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
           </button>
-
-          <div class="site-lang" >
-            <img src="./img/flag-us.svg" alt="English">
-          </div>
         </div>
       </div>
     </header>
@@ -73,14 +72,13 @@
               aria-controls="fullscreen-nav"
               aria-label="Close menu"
             >
+            <span class="nav-toggle-label" aria-hidden="false">Menu</span>
+            <span class="nav-toggle-icon" aria-hidden="false">
               <span></span>
               <span></span>
               <span></span>
+            </span>
             </button>
-
-            <div class="site-lang site-lang--nav">
-              <img src="./img/flag-us.svg" alt="English">
-            </div>
           </div>
         </div>
 
@@ -157,16 +155,30 @@
     <!-- Start Project Here -->
     <main id="primary-content" class="position-relative">
       <!-- Header Image Here -->
-      <section class="band position-relative dark-img-overlay header-banner mb-1">
+      <section class="position-relative dark-img-overlay header-banner mb-1">
         <img src="./img/wgu-give/header-desktop.jpg" class="img-fluid w-100 d-none d-md-block" />
           <img src="./img/wgu-give/header-mobile.jpg" class="img-fluid w-100 d-block d-md-none" />
           <div class="header-banner-text">
-            <h1 class="banner-text__header text-start">Giving With Intention</h1>
-            <div class="banner-text__subtitle">Fellowes has established the GIVE program, which is dedicated to building local and global partnerships which address humanity's greatest needs.  GIVE is committed to supporting initiatives in four key areas</div>
+            <h1 class="banner-text__header text-start">GIVE<sup>™</sup></h1>
           </div>
       </section>
 
-      <section class="band position-relative mb-1">
+      <section class="py-5">
+          <div class="container py-md-5">
+            <div class="row">
+                <div class="col-12 maxW-1100 px-md-0 px-3 text-center">
+                  <h2 class="section-title mb-md-4 mb-3">
+                    Giving With Intention
+                  </h2>
+                  <p class="section-desc">
+                    Fellowes has established the GIVE program, which is dedicated to building local and global partnerships which address humanity's greatest needs. GIVE is committed to supporting initiatives in four key areas.
+                  </p>
+                </div>
+            </div>
+          </div>
+      </section>
+
+      <section class="position-relative mb-1">
         <div class="text-center">
           <div class="our-design-title"></div>
           <img
@@ -179,14 +191,14 @@
               />
           <div data-mdb-toggle="" data-mdb-animation-start="onScroll" data-mdb-animation="fade-in-up" data-mdb-animation-delay="300" class="design-process-content-wrapper d-flex justify-content-center align-items-center flex-column text-black">
             <div class="image-content-overlay">
-              <div class="page-title-design mb-4">SOCIAL IMPACT</div>
-              <p class="designptag d-none d-md-block"> GIVE reaches out to our local communities, lending volunteer support to those in need. </p>
+              <div class="sub-title-heritage mb-4">SOCIAL IMPACT</div>
+              <p class="bigptext d-none d-md-block"> GIVE reaches out to our local communities, lending volunteer support to those in need. </p>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="band position-relative mb-1">
+      <section class="position-relative mb-1">
         <div class="text-center">
           <div class="our-design-title"></div>
             <img
@@ -199,14 +211,14 @@
               />
             <div data-mdb-toggle="" data-mdb-animation-start="onScroll" data-mdb-animation="fade-in-up" data-mdb-animation-delay="300" class="design-process-content-wrapper d-flex justify-content-center align-items-center flex-column text-black">
               <div class="image-content-overlay">
-                <div class="page-title-design mb-4">WORLD AID AND DEVELOPMENT</div>
-                <p class="designptag d-none d-md-block"> GIVE sponsors global causes with humanitarian projects that support education, sustenance and resources for countries in need around the world. </p>
+                <div class="sub-title-heritage mb-4">WORLD AID AND DEVELOPMENT</div>
+                <p class="bigptext d-none d-md-block"> GIVE sponsors global causes with humanitarian projects that support education, sustenance and resources for countries in need around the world. </p>
               </div>
             </div>
         </div>
       </section>
 
-      <section class="band position-relative mb-1">
+      <section class="position-relative mb-1">
           <div class="text-center">
             <div class="our-design-title"></div>
                 <img
@@ -219,15 +231,15 @@
                 />
             <div data-mdb-toggle="" data-mdb-animation-start="onScroll" data-mdb-animation="fade-in-up" data-mdb-animation-delay="300" class="design-process-content-wrapper d-flex justify-content-center align-items-center flex-column text-black">
                 <div class="image-content-overlay">
-                  <div class="page-title-design mb-4">EDUCATION</div>
-                  <p class="designptag d-none d-md-block"> GIVE partners with organizations who are passionate about bringing hope, through
+                  <div class="sub-title-heritage mb-4">EDUCATION</div>
+                  <p class="bigptext d-none d-md-block"> GIVE partners with organizations who are passionate about bringing hope, through
                   education. </p>
                 </div>
             </div>
           </div>
       </section>
 
-      <section class="band position-relative mb-1">
+      <section class="position-relative mb-1">
         <div class="text-center">
           <div class="our-design-title"></div>
               <img
@@ -240,19 +252,19 @@
               />
             <div data-mdb-toggle="" data-mdb-animation-start="onScroll" data-mdb-animation="fade-in-up" data-mdb-animation-delay="300" class="design-process-content-wrapper d-flex justify-content-center align-items-center flex-column text-black">
               <div class="image-content-overlay">
-                <div class="page-title-design mb-4">MEDICAL RESEARCH</div>
-                <p class="designptag d-none d-md-block"> GIVE supports medical research funding in the fight against life-threatening diseases. </p>
+                <div class="sub-title-heritage mb-4">MEDICAL RESEARCH</div>
+                <p class="bigptext d-none d-md-block"> GIVE supports medical research funding in the fight against life-threatening diseases. </p>
               </div>
           </div>
         </div>
       </section>
   
-      <section class="band better-section py-5 text-center fds-light-grey-bg">
+      <section class="better-section py-5 text-center fds-light-grey-bg">
           <div class="container py-md-5">
             <div class="row">
                 <div class="col-12 pb-md-5">
-                  <h2 class="lit-section-title">GIVE Today For A Better Tomorrow</h2>
-                  <div class="lit-section-desc">
+                  <h2 class="section-title">GIVE Today For A Better Tomorrow</h2>
+                  <div class="section-desc">
                       Fellowes partners financially with 501(C)3 organizations and projects, which are
                       committed to bringing sustainable improvement to our four key areas of focus. Two
                       current projects include a clean water initiative in Mozambique through World

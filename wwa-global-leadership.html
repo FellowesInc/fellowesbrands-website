@@ -43,14 +43,13 @@
             aria-controls="fullscreen-nav"
             aria-label="Toggle menu"
           >
-            <span></span>
-            <span></span>
-            <span></span>
+            <span class="nav-toggle-label site-header-nav-toggle-label" aria-hidden="true">Menu</span>
+            <span class="nav-toggle-icon" aria-hidden="true">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
           </button>
-
-          <div class="site-lang" >
-            <img src="./img/flag-us.svg" alt="English">
-          </div>
         </div>
       </div>
     </header>
@@ -72,14 +71,13 @@
               aria-controls="fullscreen-nav"
               aria-label="Close menu"
             >
+            <span class="nav-toggle-label" aria-hidden="false">Menu</span>
+            <span class="nav-toggle-icon" aria-hidden="false">
               <span></span>
               <span></span>
               <span></span>
+            </span>
             </button>
-
-            <div class="site-lang site-lang--nav">
-              <img src="./img/flag-us.svg" alt="English">
-            </div>
           </div>
         </div>
 
@@ -117,10 +115,10 @@
               </button>
               <ul class="nav-submenu">
                 <li><a href="#">Our Solutions</a></li>
-                <li><a href="#">Business Products</a></li>
-                <li><a href="#">Air Quality Management</a></li>
-                <li><a href="#">Contract Furnishings</a></li>
-                <li><a href="#">Architectural Solutions</a></li>
+                <li><a href="https://www.fellowes.com/us/en/catalog/business-products" target="_blank">Business Products</a></li>
+                <li><a href="https://www.fellowes.com/us/en/catalog/air-quality-management" target="_blank">Air Quality Management</a></li>
+                <li><a href="https://www.fellowes.com/us/en/catalog/contract-interiors" target="_blank">Contract Furnishings</a></li>
+                <li><a href="https://www.fellowes.com/us/en/catalog/architectural-solutions" target="_blank">Architectural Solutions</a></li>
               </ul>
             </li>
 
@@ -141,10 +139,10 @@
                 Careers
               </button>
               <ul class="nav-submenu">
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">Search Jobs</a></li>
-                <li><a href="#">Why Fellowes</a></li>
-                <li><a href="#">Candidate Portal</a></li>
+                <li><a href="https://careers.fellowes.com/" target="_blank">Careers</a></li>
+                <li><a href="https://careers.fellowes.com/search/jobs" target="_blank">Search Jobs</a></li>
+                <li><a href="https://careers.fellowes.com/pages/why-fellowes" target="_blank">Why Fellowes</a></li>
+                <li><a href="https://careers.fellowes.com/myportal?locale=en" target="_blank">Candidate Portal</a></li>
               </ul>
             </li>
           </ul>
@@ -156,12 +154,12 @@
     <!-- Start Project Here -->
     <main id="primary-content" class="position-relative">
       <!-- Hero Section -->
-      <section class="band position-relative dark-img-overlay header-banner mb-1">
+      <section class="position-relative dark-img-overlay header-banner mb-1">
         <img src="./img/wwa-global-leadership/header-global-leadership-desktop.jpg" class="img-fluid w-100 d-none d-md-block">
         <img src="./img/wwa-global-leadership/header-global-leadership-mobile.jpg" class="img-fluid w-100 d-block d-md-none">
         <div class="header-banner-text">
           <h1 class="banner-text__header">
-              Global<br>Leadership
+              Global Leadership
           </h1>
         </div>
       </section>
@@ -174,7 +172,7 @@
                   id="ex1" role="tablist">
                   <li class="nav-item text-center" role="presentation">
                       <a
-                              class="nav-link active text-dark py-2 px-3 fs-6 fw-bold lead-sm p-0 px-3 mb-2"
+                              class="nav-link active btn-primary btn-white mb-2"
                               id="ex1-tab-1"
                               data-mdb-toggle="tab"
                               href="#ex1-tabs-1"
@@ -187,7 +185,7 @@
                   </li>
                   <li class="nav-item lead text-center" role="presentation">
                       <a
-                              class="nav-link  text-dark py-2 px-3 fs-6 fw-bold lead-sm p-0 px-3 mb-2"
+                              class="nav-link btn-primary btn-white mb-2"
                               id="ex1-tab-2"
                               data-mdb-toggle="tab"
                               href="#ex1-tabs-2"
@@ -263,11 +261,6 @@
                               </div>
                           </li>
                           <li class="d-flex flex-column bg-white tabs-list-item">
-                              <img src="./img/wwa-global-leadership/Board-Peter.png" class="tab-image mb-lg-2" alt="Peter Fellowes"/>
-                              <div class="px-4 pt-2 pb-1 fs-5 text-dark fw-bolder">Peter Fellowes</div>
-                              <div class="px-4 pb-3 text-secondary lh-base lead-sm">Vice Chairman <br> Director</div>
-                          </li>
-                          <li class="d-flex flex-column bg-white tabs-list-item">
                               <img src="./img/wwa-global-leadership/Board-Mary.png" class="tab-image mb-lg-2" alt="Mary Fellowes"/>
                               <div class="px-4 pt-2 pb-1 fs-5 text-dark fw-bolder">Mary Fellowes</div>
                               <div class="px-4 pb-3 text-secondary lh-base lead-sm">Director</div>
@@ -300,21 +293,9 @@
                               </div>
                           </li>
                           <li class="d-flex flex-column bg-white tabs-list-item">
-                              <img src="./img/wwa-global-leadership/SLT-Cat.png" class="tab-image mb-lg-2" alt="Kathleen Noe"/>
-                              <div class="px-4 pt-2 pb-1 fs-5 text-dark fw-bolder">Kathleen Noe</div>
-                              <div class="px-4 pb-3 text-secondary lh-base lead-sm">Chief Operating Officer and
-                                  Treasurer
-                              </div>
-                          </li>
-                          <li class="d-flex flex-column bg-white tabs-list-item">
                               <img src="./img/wwa-global-leadership/SLT-MVB.png" class="tab-image mb-lg-2" alt="Michel van Beek"/>
                               <div class="px-4 pt-2 pb-1 fs-5 text-dark fw-bolder">Michel van Beek</div>
                               <div class="px-4 pb-3 text-secondary lh-base lead-sm">President EMEA/Asia Pacific</div>
-                          </li>
-                          <li class="d-flex flex-column bg-white tabs-list-item">
-                              <img src="./img/wwa-global-leadership/SLT-Monica.png" class="tab-image mb-lg-2" alt="Monica Lopez"/>
-                              <div class="px-4 pt-2 pb-1 fs-5 text-dark fw-bolder">Monica Lopez</div>
-                              <div class="px-4 pb-3 text-secondary lh-base lead-sm">Chief Market Officer</div>
                           </li>
                           <li class="d-flex flex-column bg-white tabs-list-item">
                               <img src="./img/wwa-global-leadership/SLT-Beth.png" class="tab-image mb-lg-2" alt="Beth Wright"/>
@@ -329,33 +310,24 @@
                           <li class="d-flex flex-column bg-white tabs-list-item">
                               <img src="./img/wwa-global-leadership/SLT-Stacy.png" class="tab-image mb-lg-2" alt="Stacy Cano"/>
                               <div class="px-4 pt-2 pb-1 fs-5 text-dark fw-bolder">Stacy Cano</div>
-                              <div class="px-4 pb-3 text-secondary lh-base lead-sm">Head of Global Human Resources</div>
+                              <div class="px-4 pb-3 text-secondary lh-base lead-sm">Global Head - Talent Experience</div>
                           </li>
                           <li class="d-flex flex-column bg-white tabs-list-item">
                               <img src="./img/wwa-global-leadership/SLT-JE.png" class="tab-image mb-lg-2"
                                   alt="Jameson Eisenmenger"/>
                               <div class="px-4 pt-2 pb-1 fs-5 text-dark fw-bolder">Jameson Eisenmenger</div>
-                              <div class="px-4 pb-3 text-secondary lh-base lead-sm">General Counsel Secretary</div>
+                              <div class="px-4 pb-3 text-secondary lh-base lead-sm">General Counsel</div>
                           </li>
                           <li class="d-flex flex-column bg-white tabs-list-item">
-                              <img src="./img/wwa-global-leadership/SLT-Jeff-N.png" class="tab-image mb-lg-2" alt="Jeff Nielson"/>
-                              <div class="px-4 pt-2 pb-1 fs-5 text-dark fw-bolder">Jeff Nielson</div>
-                              <div class="px-4 pb-3 text-secondary lh-base lead-sm">Vice President NA Operations &
-                                  Customer
-                                  Service
-                              </div>
-                          </li>
-                          <li class="d-flex flex-column bg-white tabs-list-item">
-                              <img src="./img/wwa-global-leadership/SLT-Hunter.png" class="tab-image mb-lg-2" alt="Hunter Rich"/>
-                              <div class="px-4 pt-2 pb-1 fs-5 text-dark fw-bolder">Hunter Rich</div>
-                              <div class="px-4 pb-3 text-secondary lh-base lead-sm">Vice President & General
-                                  Manager Bankers Box
+                              <img src="./img/wwa-global-leadership/Matt-Litfin.png" class="tab-image mb-lg-2" alt="Matt Litfin"/>
+                              <div class="px-4 pt-2 pb-1 fs-5 text-dark fw-bolder">Matt Litfin</div>
+                              <div class="px-4 pb-3 text-secondary lh-base lead-sm">Executive Vice President - Investments & Development
                               </div>
                           </li>
                           <li class="d-flex flex-column bg-white tabs-list-item">
                               <img src="./img/wwa-global-leadership/SLT-Eugene.png" class="tab-image mb-lg-2" alt="Eugene Lee"/>
                               <div class="px-4 pt-2 pb-1 fs-5 text-dark fw-bolder">Eugene Lee</div>
-                              <div class="px-4 pb-3 text-secondary lh-base lead-sm">President Fellowes Mobile</div>
+                              <div class="px-4 pb-3 text-secondary lh-base lead-sm">Channel President - Fellowes Mobile</div>
                           </li>
                       </ul>
                   </div>

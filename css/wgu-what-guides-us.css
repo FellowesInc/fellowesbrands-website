@@ -91,12 +91,12 @@
 
   .wgu-card-text,
   .wgu-link-text {
-    font-size: 26px;
+    font-size: 20px;
   }
 }
 
 .wgu-card-icon {
     display: block;
     width: 100%;
-    max-width: 325px;
+    max-width: 228px;
 }

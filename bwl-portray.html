@@ -44,14 +44,13 @@
             aria-controls="fullscreen-nav"
             aria-label="Toggle menu"
           >
-            <span></span>
-            <span></span>
-            <span></span>
+            <span class="nav-toggle-label site-header-nav-toggle-label" aria-hidden="true">Menu</span>
+            <span class="nav-toggle-icon" aria-hidden="true">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
           </button>
-
-          <div class="site-lang" >
-            <img src="./img/flag-us.svg" alt="English">
-          </div>
         </div>
       </div>
     </header>
@@ -73,14 +72,13 @@
               aria-controls="fullscreen-nav"
               aria-label="Close menu"
             >
+            <span class="nav-toggle-label" aria-hidden="false">Menu</span>
+            <span class="nav-toggle-icon" aria-hidden="false">
               <span></span>
               <span></span>
               <span></span>
+            </span>
             </button>
-
-            <div class="site-lang site-lang--nav">
-              <img src="./img/flag-us.svg" alt="English">
-            </div>
           </div>
         </div>
 
@@ -118,10 +116,10 @@
               </button>
               <ul class="nav-submenu">
                 <li><a href="#">Our Solutions</a></li>
-                <li><a href="#">Business Products</a></li>
-                <li><a href="#">Air Quality Management</a></li>
-                <li><a href="#">Contract Furnishings</a></li>
-                <li><a href="#">Architectural Solutions</a></li>
+                <li><a href="https://www.fellowes.com/us/en/catalog/business-products" target="_blank">Business Products</a></li>
+                <li><a href="https://www.fellowes.com/us/en/catalog/air-quality-management" target="_blank">Air Quality Management</a></li>
+                <li><a href="https://www.fellowes.com/us/en/catalog/contract-interiors" target="_blank">Contract Furnishings</a></li>
+                <li><a href="https://www.fellowes.com/us/en/catalog/architectural-solutions" target="_blank">Architectural Solutions</a></li>
               </ul>
             </li>
 
@@ -142,10 +140,10 @@
                 Careers
               </button>
               <ul class="nav-submenu">
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">Search Jobs</a></li>
-                <li><a href="#">Why Fellowes</a></li>
-                <li><a href="#">Candidate Portal</a></li>
+                <li><a href="https://careers.fellowes.com/" target="_blank">Careers</a></li>
+                <li><a href="https://careers.fellowes.com/search/jobs" target="_blank">Search Jobs</a></li>
+                <li><a href="https://careers.fellowes.com/pages/why-fellowes" target="_blank">Why Fellowes</a></li>
+                <li><a href="https://careers.fellowes.com/myportal?locale=en" target="_blank">Candidate Portal</a></li>
               </ul>
             </li>
           </ul>
@@ -158,7 +156,7 @@
     <main id="primary-content" class="position-relative">
 
       <!-- Header Section -->
-      <section class="band position-relative company-values-banner">
+      <section class="position-relative header-banner">
         <div class="ratio  ratio-16x9" style="--mdb-aspect-ratio:47%">
           <video playsinline autoplay muted loop>
             <source src="./img/bwl-portray/portray-banner.mp4" type="video/mp4" />
@@ -169,8 +167,8 @@
       <!-- Interactive Experience Section -->
       <section class="text-center py-5 px-4">
         <div class="container mw-1000">
-          <h2 class="page-title mb-4 fw-300">Interactive Experience</h2>
-          <p class="preg19 fw-300">
+          <h2 class="section-title mb-4">Interactive Experience</h2>
+          <p class="section-desc">
           PORTRAY is an interactive experience that brings inspiration and confidence to the pre-spec stage for any project design. PORTRAY instantaneously renders products to the clients liking, providing a greater level of direction and confidence before entering the specification stage of a project.
           </p>
         </div>
@@ -180,11 +178,11 @@
       <section class="mx-3 mx-md-auto my-5">
         <div class="container text-black fds-light-grey-bg py-5 my-md-4">
           <div class="row py-md-4">
-            <div class="col-12 col-md-10 offset-md-1">
+            <div class="col-12 col-md-10 offset-md-1 text-center">
               <img class="d-block w-100 mb-5" src="./img/bwl-portray/personal-product-banner.jpg" alt="A woman presenting a digital walkthrough with two clients">
-              <h2 class="page-title fw-300 mb-3 text-center">Visualize Fellowes Products</h2>
-              <p class="preg19 fw-300">
-                Explore configurations, finish and materials options, in real-time and real-size, alone or within environments 
+              <h2 class="section-title mb-3">Visualize Fellowes Products</h2>
+              <p class="section-desc">
+                Explore configurations, finish and materials options, in real-time and real-size, alone or within environments.
               </p>
             </div>
           </div>
@@ -200,25 +198,25 @@
                 <div class="row pt-md-5 pt-3 text-center g-4 g-md-5">
                   <div class="col-12 col-lg-6 mb-4">
                     <img src="./img/bwl-portray/quad-tech-img.jpg" alt="Woman using the Fellowes Portray System" class="quad-section-img d-block w-100">
-                    <h3 class="quad-section-title">Technology</h3>
-                    <p class="preg19 fw-300 ste-col-text">PORTRAY utilizes video game technology to provide high quality renders in life-size proportions</p>
+                    <h3 class="section-subtitle mt-3">Technology</h3>
+                    <p class="section-desc">PORTRAY utilizes video game technology to provide high quality renders in life-size proportions</p>
                   </div>
                   <div class="col-12 col-lg-6 mb-4">
                     <img src="./img/bwl-portray/quad-token-img.jpg" alt="Image of a hand placing something down on a digital display table" class="quad-section-img d-block w-100">
-                    <h3 class="quad-section-title">Tokens</h3>
-                    <p class="preg19 fw-300 ste-col-text">Use tokens to explore categories and options</p>
+                    <h3 class="section-subtitle mt-3">Tokens</h3>
+                    <p class="section-desc mw-400 mx-auto">Use tokens to explore categories and options</p>
                   </div>
                 </div>
                 <div class="row pt-md-5 pt-4 text-center g-4 g-md-5">
                   <div class="col-12 col-lg-6 mb-4">
                     <img src="./img/bwl-portray/quad-prod-img.jpg" alt="Man showing Monitor Arms on the Portray System" class="quad-section-img d-block w-100">
-                    <h3 class="quad-section-title">Products</h3>
-                    <p class="preg19 fw-300 ste-col-text">Learn about Fellowes products and quickly visualize various options</p>
+                    <h3 class="section-subtitle mt-3">Products</h3>
+                    <p class="section-desc mw-400 mx-auto">Learn about Fellowes products and quickly visualize various options</p>
                   </div>
                   <div class="col-12 col-lg-6 mb-4">
                     <img src="./img/bwl-portray/quad-enviro-img.jpg" alt="Digital Rendering of Modular Walls in a space" class="quad-section-img d-block w-100">
-                    <h3 class="quad-section-title">Environments</h3>
-                    <p class="preg19 fw-300 ste-col-text">Get a realistic perspective within an environment</p>
+                    <h3 class="section-subtitle mt-3">Environments</h3>
+                    <p class="section-desc mw-400 mx-auto">Get a realistic perspective within an environment</p>
                   </div>
                 </div>
               </div>
@@ -232,8 +230,8 @@
         <div class="container text-black py-md-4">
           <div class="row g-2 g-md-4">
             <div class="col-12">
-              <h2 class="page-title fw-300 mb-3 mb-md-4 text-center">Get a Summary</h2>
-              <p class="preg19 fw-300 text-center">
+              <h2 class="section-title mb-3 mb-md-4 text-center">Get a Summary</h2>
+              <p class="section-desc text-center">
                 Portray creates one organized report with all selections, list price and lead time details for the project team, future reference, adjustments or to allow a smooth transition to the next project phase.
               </p>
             </div>
@@ -241,8 +239,8 @@
               <img src="./img/bwl-portray/summary-report-img.jpg" alt="Image of a computer and phone showing a digital report" class="summary-img d-block w-100 my-5">
             </div>
             <div class="col-12">
-              <h2 class="page-title fw-300 mb-3 mb-md-4 text-center">Housed in Chicago with remote capacities</h2>
-              <p class="preg19 fw-300 text-center">
+              <h2 class="section-title mb-3 mb-md-4 text-center">Housed in Chicago with remote capacities</h2>
+              <p class="section-desc text-center">
                 Cameras in our experiences center and a direct feed of the screen allow teams to operate in a hybrid location process or fully remote to access the power of Portray
               </p>
             </div>
@@ -259,11 +257,11 @@
                 <div class="row pt-md-5 pt-3 g-4 g-md-5">
                   <div class="col-12 col-lg-6 mb-4 mt-0">
                     <img src="./img/bwl-portray/800Fulton.jpg" alt="Image of the Chicago Downtown" class="d-block w-100">
-                    <p class="preg19 fw-300 text-center">Come visit our Design and Experience Center</p>
+                    <p class="section-desc text-center">Come visit our Design and Experience Center</p>
                   </div>
                   <div class="col-12 col-lg-6 mb-4 mt-0">
                     <img src="./img/bwl-portray/lady-working-near-window.jpg" alt="Image of a woman with her back to the camera working on a laptop facing a window with a nature scene outside" class="d-block w-100">
-                    <p class="preg19 fw-300 text-center">Join us from your location</p>
+                    <p class="section-desc text-center">Join us from your location</p>
                   </div>
                 </div>
               </div>
@@ -277,13 +275,13 @@
         <div class="container text-black fds-light-grey-bg py-5 my-md-4">
           <div class="row">
             <div class="col-12 col-md-10 offset-md-1">
-              <h2 class="page-title fw-300 mb-3 text-center">Your Session</h2>
+              <h2 class="section-title mb-3 text-center">Your Session</h2>
               <div class="container">
-                <div class="row pt-md-5 pt-3 text-center text-lg-start">
+                <div class="row pt-md-5 pt-3">
                   <div class="col-12 col-lg-5 mb-lg-0 mb-4">
                     <div>
                       <div class="session-subtitle">Schedule a session</div>
-                      <p class="preg19 fw-300 ste-col-text">
+                      <p class="section-desc">
                         Please reach out to your local Sales Representative
                       </p>
                     </div>
@@ -291,7 +289,7 @@
                   <div class="col-12 col-lg-5 offset-lg-2 mb-lg-0 mb-4">
                     <div>
                       <div class="session-subtitle">Already have a scheduled session?</div>
-                      <p id="portrayFooterVidLabel" class="preg19 fw-300"><a href="javascript:;" class="link-underlined center-underline text-black" data-mdb-toggle="modal" data-mdb-target="#portrayFooterVid">Watch this first</a></p>
+                      <p id="portrayFooterVidLabel" class="section-desc"><a href="javascript:;" class="link-underlined text-black mt-3 d-block w-fit-content" data-mdb-toggle="modal" data-mdb-target="#portrayFooterVid">Watch this first</a></p>
                       <!-- Modal -->
                       <div
                         class="modal fade"

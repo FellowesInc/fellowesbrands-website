@@ -152,10 +152,10 @@
     <!-- Navbar -->
 
     <!-- Start Project Here -->
-    <main id="primary-content" class="position-relative" data-loading="true">
+    <main id="primary-content" class="position-relative" data-loading="false">
 
         <!-- Hero Section -->
-        <section class="header-banner dark-img-overlay position-relative mb-1">
+        <section class="header-banner dark-img-overlay position-relative">
           <img src="./img/wwa-newsroom/hero-img-desktop.jpg" class="img-fluid w-100 d-none d-md-block" />
           <img src="./img/wwa-newsroom/hero-img-mobile.jpg" class="img-fluid w-100 d-block d-md-none mobile-header-img" />
           <div class="header-banner-text">
@@ -164,8 +164,8 @@
         </section>
 
         <!-- Data Loaded Container -->
-        <section class="results-section newsroom-template">
-          <div class="newsroom-tabs" data-newsroom-tabs>
+        <section class="results-section newsroom-template fds-tan-bg pt-5">
+          <div class="newsroom-tabs pt-5" data-newsroom-tabs>
             <div
               class="newsroom-tabs__nav"
               role="tablist"
@@ -174,7 +174,7 @@
             >
               <button
                 type="button"
-                class="newsroom-tabs__tab"
+                class="newsroom-tabs__tab btn-primary btn-white"
                 role="tab"
                 data-bind="
                   text: name,
@@ -187,7 +187,7 @@
               ></button>
             </div>
 
-            <div class="fds-tan-bg">
+            <div class="">
               <div class="container px-4">
                 <div class="row">
                   <div class="col-12">
@@ -215,7 +215,7 @@
                                   <p class="newsroom-card__description" data-bind="text: description"></p>
                                   <p class="newsroom-card__date" data-bind="text: postedOn"></p>
                                 </div>
-                                <a class="newsroom-card__button" data-bind="attr: { href: url }, text: buttonText"></a>
+                                <a class="link-underlined mt-3 fw-semibold text-uppercase w-fit-content text-black" data-bind="attr: { href: url }, text: buttonText"></a>
                               </div>
                             </div>
                           </article>
@@ -232,10 +232,9 @@
         <!-- Data Loading Container -->
         <section class="loading-section placeholder-glow position-relative">
           <div class="newsroom-tabs">
-            <div class="newsroom-tabs__nav placeholder"></div>
 
-            <div class="fds-tan-bg">
-              <div class="container px-4">
+            <div class="fds-tan-bg pt-5">
+              <div class="container pt-5 px-4">
                 <div class="row">
                   <div class="col-12">
                     <div class="newsroom-tabs__panels">

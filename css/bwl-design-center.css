@@ -3,6 +3,11 @@
   margin-inline: auto;
 }
 
+.mw-332 {
+  max-width: 332px;
+  margin-inline: auto;
+}
+
 .ratio-8x3 {
   aspect-ratio: 8 / 3;
 }
@@ -363,5 +368,30 @@ button.slick-slider-arrow {
   .company-design-title {
     font-size: 8.875rem;
     line-height: 8.438rem;
+  }
+}
+
+.visualize-section {
+  background-color: #d9d9d9;
+}
+
+.card-title {
+  font-weight: 700;
+  color: #000;
+  line-height: 1.3;
+  font-size: 14px;
+}
+
+.section-text {
+  font-size: 16px;
+  text-wrap: pretty;
+}
+
+@media (min-width: 768px) {
+  .card-title {
+    font-size: 24px;
+  }
+  .section-text {
+    font-size: 20px;
   }
 }

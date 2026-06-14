@@ -44,14 +44,13 @@
             aria-controls="fullscreen-nav"
             aria-label="Toggle menu"
           >
-            <span></span>
-            <span></span>
-            <span></span>
+            <span class="nav-toggle-label site-header-nav-toggle-label" aria-hidden="true">Menu</span>
+            <span class="nav-toggle-icon" aria-hidden="true">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
           </button>
-
-          <div class="site-lang" >
-            <img src="./img/flag-us.svg" alt="English">
-          </div>
         </div>
       </div>
     </header>
@@ -73,14 +72,13 @@
               aria-controls="fullscreen-nav"
               aria-label="Close menu"
             >
+            <span class="nav-toggle-label" aria-hidden="false">Menu</span>
+            <span class="nav-toggle-icon" aria-hidden="false">
               <span></span>
               <span></span>
               <span></span>
+            </span>
             </button>
-
-            <div class="site-lang site-lang--nav">
-              <img src="./img/flag-us.svg" alt="English">
-            </div>
           </div>
         </div>
 
@@ -118,10 +116,10 @@
               </button>
               <ul class="nav-submenu">
                 <li><a href="#">Our Solutions</a></li>
-                <li><a href="#">Business Products</a></li>
-                <li><a href="#">Air Quality Management</a></li>
-                <li><a href="#">Contract Furnishings</a></li>
-                <li><a href="#">Architectural Solutions</a></li>
+                <li><a href="https://www.fellowes.com/us/en/catalog/business-products" target="_blank">Business Products</a></li>
+                <li><a href="https://www.fellowes.com/us/en/catalog/air-quality-management" target="_blank">Air Quality Management</a></li>
+                <li><a href="https://www.fellowes.com/us/en/catalog/contract-interiors" target="_blank">Contract Furnishings</a></li>
+                <li><a href="https://www.fellowes.com/us/en/catalog/architectural-solutions" target="_blank">Architectural Solutions</a></li>
               </ul>
             </li>
 
@@ -142,10 +140,10 @@
                 Careers
               </button>
               <ul class="nav-submenu">
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">Search Jobs</a></li>
-                <li><a href="#">Why Fellowes</a></li>
-                <li><a href="#">Candidate Portal</a></li>
+                <li><a href="https://careers.fellowes.com/" target="_blank">Careers</a></li>
+                <li><a href="https://careers.fellowes.com/search/jobs" target="_blank">Search Jobs</a></li>
+                <li><a href="https://careers.fellowes.com/pages/why-fellowes" target="_blank">Why Fellowes</a></li>
+                <li><a href="https://careers.fellowes.com/myportal?locale=en" target="_blank">Candidate Portal</a></li>
               </ul>
             </li>
           </ul>
@@ -157,28 +155,27 @@
     <!-- Start Project Here -->
     <main id="primary-content" class="position-relative">
       <!-- Hero Section -->
-      <section class="band position-relative dark-img-overlay header-banner">
+      <section class="position-relative dark-img-overlay header-banner">
         <img src="./img/wwa-awards/header-award-desktop.jpg" class="img-fluid w-100 d-none d-md-block">
         <img src="./img/wwa-awards/header-award-mobile.jpg" class="img-fluid w-100 d-block d-md-none">
         <div class="header-banner-text">
           <h1 class="banner-text__header">
-              Design<br>Awards
+              Design Awards
           </h1>
         </div>
       </section>
 
       <section class="section awards-page__awards position-relative overflow-hidden">
           <div class="container container-lg d-flex flex-column align-items-center">
-              <div class="display-2 text-outline awards-page__awards-text-decoration overflow-hidden">RECOGNITION</div>
               <!-- Tabs start -->
               <div class="container d-flex flex-column" id="awards-tabs">
                   <!-- Tabs navs start -->
                   <div class="d-none d-xl-block d-lg-block mb-4">
-                      <ul class="nav nav-pills mb-3 flex justify-content-center gap-2" id="awards-tabs-tab"
+                      <ul class="nav nav-pills global-nav-tabs mb-3 flex justify-content-center gap-2" id="awards-tabs-tab"
                           role="tablist">
                           <li class="nav-item" role="presentation">
                               <a
-                                      class="nav-link active"
+                                      class="nav-link active btn-primary btn-white"
                                       id="awards-products-tab"
                                       href="#awards-products"
                                       data-mdb-toggle="tab"
@@ -191,7 +188,7 @@
                           </li>
                           <li class="nav-item" role="presentation">
                               <a
-                                      class="nav-link"
+                                      class="nav-link btn-primary btn-white"
                                       id="awards-industry-tab"
                                       href="#awards-industry"
                                       data-mdb-toggle="tab"
@@ -204,7 +201,7 @@
                           </li>
                           <li class="nav-item" role="presentation">
                               <a
-                                      class="nav-link"
+                                      class="nav-link btn-primary btn-white"
                                       id="awards-corporate-tab"
                                       href="#awards-corporate"
                                       data-mdb-toggle="tab"
@@ -222,7 +219,7 @@
                   <!-- Tabs dropdown start -->
                   <div class="dropdown-tabs d-block d-xl-none d-lg-none
                   position-fixed z-3 start-50 bottom-0
-                  translate-middle-x pb-3 awards-dropdown-menu zindex-900">
+                  translate-middle-x pb-3 global-dropdown-menu zindex-900">
                       <div class="dropdown dropup">
                           <button class="dropdown-toggle py-2 px-4 text-uppercase lead lead-sm" type="button"
                                   id="dropdownMenu2" data-mdb-toggle="dropdown" aria-expanded="false">

@@ -4,45 +4,10 @@
 
 /* Tabs */
 .newsroom-tabs__nav {
-  background-color: #000;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 0.5rem;
-}
-
-.newsroom-tabs__tab {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  background: transparent;
-  padding: 0.75rem 1rem;
-  cursor: pointer;
-  line-height: 1;
-  color: #fff;
-  opacity: .6;
-  text-decoration: none;
-  text-transform: uppercase;
-  text-align: center;
-  font-size: 1rem;
-  transition: all .3s ease-in-out;
-  border: none;
-}
-
-.newsroom-tabs__tab:hover,
-.newsroom-tabs__tab:focus-visible {
-  color: #fff;
-  opacity: 1;
-}
-
-.newsroom-tabs__tab.is-active {
-  color: #fff;
-  opacity: 1;
-}
-
-.newsroom-tabs__tab:focus-visible {
-  outline: 1px solid #fff;
-  outline-offset: 3px;
+  gap: 1rem;
 }
 
 .newsroom-tabs__panels {

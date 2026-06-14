@@ -142,10 +142,6 @@
   .tab-box {
     padding: 3rem 2rem;
   }
-
-  .safeairstoriestabbox h2 {
-    font-size: var(--fds-fs-850);
-  }
 }
 
 @media (min-width: 1200px) {
@@ -223,7 +219,7 @@
 }
 
 .header-text-wrapper {
-  background-color: rgba(255, 255, 255, .5);
+  background-color: rgba(255, 255, 255, .8);
   padding: 2rem 1rem 2rem 44%;
   font-size: 14px;
   text-wrap: pretty;
@@ -330,10 +326,6 @@
 .report-link {
   font-size: 16px;
   text-align: center;
-}
-
-.report-link::after {
-  width: 100%;
 }
 
 .impact-report-img {
@@ -584,5 +576,26 @@
 
   .award-card {
     margin-inline: 1rem;
+  }
+}
+
+.card-title {
+  font-weight: 700;
+  color: #000;
+  line-height: 1.3;
+  font-size: 14px;
+}
+
+.section-text {
+  font-size: 16px;
+  text-wrap: pretty;
+}
+
+@media (min-width: 768px) {
+  .card-title {
+    font-size: 24px;
+  }
+  .section-text {
+    font-size: 20px;
   }
 }

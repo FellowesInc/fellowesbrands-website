@@ -62,15 +62,18 @@
     width: 100%;
 }
 
-.solutions-card-btn {
-  box-shadow: none !important;
+.solutions-card h3 {
   position: absolute;
-  bottom: 1rem;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
+  bottom: .5rem;
+  display: block;
+  width: 100%;
   text-align: center;
-  white-space: nowrap;
   font-size: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 30%;
+  color: #fff;
 }
 
 .floating-text-section-img {
@@ -143,6 +146,10 @@
   .solutions-card-btn {
     font-size: 16px !important;
     bottom: 2rem;
+  }
+
+  .solutions-card h3 {
+    font-size: 14px;
   }
 
   .floating-text-wrapper {
