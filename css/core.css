@@ -419,6 +419,11 @@ a:focus,
     object-position: center;
 }
 
+.header-banner img.object-bottom-right {
+  -o-object-position: bottom right;
+     object-position: bottom right;
+}
+
 .header-banner-text {
     position: absolute;
     bottom: 2rem;
@@ -455,7 +460,7 @@ a:focus,
 }
 
 .section-subtitle {
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 1rem;
     color: #000;
     text-transform: uppercase;
@@ -503,7 +508,7 @@ a:focus,
     }
 
     .section-subtitle {
-        font-size: 26px;
+        font-size: 20px;
         margin-bottom: 1rem;
     }
 
@@ -573,7 +578,7 @@ a:focus,
     color: #fff !important;
     border-radius: 0px;
     border: 1px solid #719bd5;
-    box-shadow: 0 4px 9px -4px #3b71ca61;
+    box-shadow: none;
     text-transform: capitalize;
     line-height: 1;
     font-size: 14px;
@@ -582,6 +587,7 @@ a:focus,
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
+    transition: all .3s ease-in-out;
 }
 
 .btn-primary:first-child:hover,
@@ -592,7 +598,7 @@ a:focus,
     background: #4c89d9;
     border-color: #4c89d9;
     color: #fff;
-    box-shadow: 0 4px 9px -4px #3b71ca61;
+    box-shadow: none;
 }
 
 .icon-btn {
@@ -601,16 +607,27 @@ a:focus,
   gap: .25rem;
 }
 
-.icon-btn img {
+.icon-btn svg {
     display: inline-block;
     width: auto;
     height: 15px;
 }
 
+.inner-btn-wrapper {
+  display: flex;
+  align-items: center;
+  gap: .25rem;
+}
+
+
 .btn-black {
-    background: #000;
+    background: #fff;
     border-color: #000;
-    box-shadow: 0 4px 9px -4px #00000057;
+    color: #000 !important;
+}
+
+.btn-black.icon-btn svg {
+  fill: #000;
 }
 
 .btn-black:first-child:hover,
@@ -618,15 +635,27 @@ a:focus,
 .btn-black:hover,
 .btn-black:focus,
 :not(.btn-check)+.btn-black:hover {
-    border-color: #4c89d9;
-    box-shadow: 0 4px 9px -4px #00000057;
+    background: #000;
+    border-color: #000;
+    color: #fff !important;
+}
+
+.btn-black.icon-btn:hover svg,
+.btn-black.icon-btn:first-child:hover svg,
+.btn-black.icon-btn:focus-visible svg,
+.btn-black.icon-btn:focus svg,
+:not(.btn-check)+.btn-black.icon-btn:hover svg {
+  fill: #fff;
 }
 
 .btn-white {
-    background: #fff;
-    border-color: #000;
-    color: #000 !important;
-    box-shadow: 0 4px 9px -4px #00000057;
+    background: transparent;
+    border-color: #fff;
+    color: #fff !important;
+}
+
+.btn-white.icon-btn svg {
+  fill: #fff;
 }
 
 .btn-white:first-child:hover,
@@ -634,9 +663,17 @@ a:focus,
 .btn-white:hover,
 .btn-white:focus,
 :not(.btn-check)+.btn-white:hover {
-    background: #4c89d9;
-    border-color: #4c89d9;
-    box-shadow: 0 4px 9px -4px #00000057;
+    background: #fff;
+    border-color: #fff;
+    color: #000 !important;
+}
+
+.btn-white.icon-btn:hover svg,
+.btn-white.icon-btn:first-child:hover svg,
+.btn-white.icon-btn:focus-visible svg,
+.btn-white.icon-btn:focus svg,
+:not(.btn-check)+.btn-white.icon-btn:hover svg {
+  fill: #000;
 }
 
 .global-nav-tabs.nav-tabs {
@@ -647,11 +684,13 @@ a:focus,
 .newsroom-tabs__tab {
     border-radius: 0 !important;
     border: 1px solid #000;
+    color: #000;
     transition: all linear 300ms;
     text-transform: capitalize !important;
     line-height: 1 !important;
     font-size: 14px !important;
     padding: .5rem 1.125rem !important;
+    box-shadow: 0 4px 9px -4px #00000057;
 }
 
 .global-nav-tabs .nav-link.active,
@@ -666,10 +705,10 @@ a:focus,
 .global-nav-tabs .nav-link:focus,
 .newsroom-tabs__tab:hover,
 .newsroom-tabs__tab:focus {
-    background: #4c89d9 !important;
-    border-color: #4c89d9 !important;
+    background: #000 !important;
+    border-color: #000 !important;
     color: #fff !important;
-    box-shadow: 0 4px 9px -4px #00000057;
+    box-shadow: 0 12px 9px -4px #0000007a;;
 }
 
 .global-dropdown-menu .dropdown-tabs {

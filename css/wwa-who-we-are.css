@@ -42,7 +42,7 @@
 }
 
 .one-fellowes-section {
-  background-color: #F1EFEE;
+  background-color: var(--fds-tan);
 }
 
 .solutions-card-grid {
@@ -74,6 +74,12 @@
   text-transform: uppercase;
   letter-spacing: 30%;
   color: #fff;
+  transition: all .3s ease-in-out;
+}
+
+.solutions-card:hover h3,
+.solutions-card:focus-visible h3 {
+  color: var(--fds-yellow);
 }
 
 .floating-text-section-img {
@@ -102,7 +108,7 @@
 }
 
 .tile-card-content {
-  background-color: #F1EFEE;
+  background-color: var(--fds-tan);
   text-align: center;
   padding: 2rem 1.5rem;
   height: 100%;

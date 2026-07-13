@@ -13,7 +13,6 @@
   display: block;
   position: relative;
   max-width: 400px;
-  color: #fff;
 }
 
 .product-grid.two-col-product-grid {
@@ -51,6 +50,13 @@
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 30%;
+  color: #fff;
+  transition: all .3s ease-in-out;
+}
+
+.product-grid-item:hover h3,
+.product-grid-item:focus-visible h3 {
+  color: var(--fds-yellow);
 }
 
 @media (min-width: 768px) {

@@ -326,6 +326,10 @@
 .report-link {
   font-size: 16px;
   text-align: center;
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .impact-report-img {
@@ -372,18 +376,6 @@
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-}
-
-.award-card-title::after {
-  display: block;
-  content: '';
-  height: 2px;
-  width: 50px;
-  background-color: var(--fds-yellow);
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: -.5rem;
 }
 
 .multi-carousel .multi-carousel-inner .multi-carousel-item .timeline-img {

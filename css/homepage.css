@@ -78,11 +78,6 @@ body {
   color: #fff;
 }
 
-.hero-link.link-underlined:hover::after ,
-.hero-link.link-underlined:focus-visible {
-  width: 65px;
-}
-
 #main-footer {
     z-index: 10;
 }
