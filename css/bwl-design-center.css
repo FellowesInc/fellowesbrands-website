@@ -372,7 +372,7 @@ button.slick-slider-arrow {
 }
 
 .visualize-section {
-  background-color: #d9d9d9;
+  background-color: var(--fds-tan);
 }
 
 .card-title {

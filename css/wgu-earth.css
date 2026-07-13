@@ -1,7 +1,7 @@
 :root {
   --fbr-dk-green: #77877E;
   --fbr-lt-green: #88A377;
-  --earth-bg-color: #f6f5f3;
+  --earth-bg-color: var(--fds-tan);
 }
 
 .mw-635 {
