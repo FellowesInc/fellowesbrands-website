@@ -690,7 +690,7 @@ a:focus,
     line-height: 1 !important;
     font-size: 14px !important;
     padding: .5rem 1.125rem !important;
-    box-shadow: 0 4px 9px -4px #00000057;
+    box-shadow: 0 4px 9px -4px rgba(0, 0, 0, 0.336);
 }
 
 .global-nav-tabs .nav-link.active,
@@ -698,7 +698,7 @@ a:focus,
     color: #fff !important;
     background: #000 !important;
     border-color: #000 !important;
-    box-shadow: 0 4px 9px -4px #00000057;
+    box-shadow: 0 4px 9px -4px rgba(0, 0, 0, 0.336);
 }
 
 .global-nav-tabs .nav-link:hover,
@@ -708,7 +708,7 @@ a:focus,
     background: #000 !important;
     border-color: #000 !important;
     color: #fff !important;
-    box-shadow: 0 12px 9px -4px #0000007a;;
+    box-shadow: 0 12px 9px -4px rgba(0, 0, 0, 0.478);
 }
 
 .global-dropdown-menu .dropdown-tabs {
